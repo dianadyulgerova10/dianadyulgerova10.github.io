@@ -218,3 +218,12 @@ div#details_photo{text-align: center;}
     padding: 10px;}
 ul#gift_card li{display:inline;}
  */
+ 
+ 
+ #gift_card  {
+	 overflow: auto;
+ }
+ 
+ #gift_card  li{
+	 float: left;
+ }
