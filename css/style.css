@@ -51,6 +51,10 @@ float: right;}
 
 
 
+
+
+
+
 #contact_form{
 	float:left;
 	width:50%;}
@@ -150,9 +154,10 @@ width: 100;
     } */
 
 
-#product_content #main ,#index_content #main, #pr_content #main_pr ,
+ #product_content #main ,#index_content #main, #pr_content #main_pr ,
  #contact_content #main, #details_content #main,
-  #content #main
+  #content #main	
+
 {	
 
 float:left;
@@ -185,7 +190,10 @@ height:200px;} */
 #post_address{display:inline;
 	float: right;}
 
-	#main_index_photo,#main_index_info,#about_us{text-align: center;}
+	#main_index_photo,#main_index_info,.about_us{text-align: center;}
+
+
+div#details_photo{text-align: center;}
 	
 /* fieldset { 
     display: block;
@@ -197,4 +205,16 @@ height:200px;} */
     padding-right: 0.75em;
     border:1px groove solid #C71585;
 }
+ */
+ 
+ /*  */
+ 
+/*  #choose{text-align: center;
+ display:inline;
+ }
+ ul#gift_card{margin: auto;
+    width: 50%;
+	display:inline;
+    padding: 10px;}
+ul#gift_card li{display:inline;}
  */

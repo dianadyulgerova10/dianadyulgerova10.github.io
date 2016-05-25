@@ -6,7 +6,7 @@
 	<meta name="author" content="">
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
-	<link rel="icon"  href="favicon.ico"  type="image/x-icon" sizes="all">
+	<link rel="icon"  href="favicon.ico"  type="image/x-icon" sizes="16x16">
     <title>Online Store</title>
    </head>
    <body>
@@ -66,8 +66,82 @@
       <!--End Aside bar -->
 	  
 	  <!-- main section -->
-	  <section id="main">
-         
+	  <section id="main" style = "text-align:center" > 
+	  <!-- description girf card -->
+		 <section><h2 >Make a perfect gift</h2>
+		<article class="gift_card"><p>Lorem ipsum dolor sit amet, qui simul ubique ad, cu vel error assentior, everti volutpat periculis ne vim. An eos admodum maiestatis, pro at ipsum debet euismod. Nostrum offendit iracundia qui eu. Ut ius magna salutatus, ex sed vivendo indoctum, id quis quot epicuri qui. </p></article>
+		 <article class="gift_card"><p>Ei aliquando adipiscing usu. Vel te recusabo comprehensam, quod elitr ea per. Sonet viderer sanctus quo ex. Pri ne civibus officiis torquatos, sed ex discere accusam mediocritatem. Ut rebum postulant ius, in eros vivendo sed, nec id partem quodsi. Eu cum scaevola definitionem, nec enim esse ut.  </p></article>
+		 <article class="gift_card"><p></p></article></section>
+		 <!-- end description
+<!-- Choose a card -->
+<section >
+<form style="dislay:inline!important;" >
+<h2>Purchase gift cards</h2>
+
+<h3>Choose a card</h3>
+<ul id="gift_card" style="list-style-type:none">
+<li><label><input type="radio" name="gift_card" value="red" checked><img src="images/gift_card/red.jpg" alt="Red Gift Card" style="width:200px;height:140px;display: inline;"><br></label></li>
+<li><label><input type="radio" name="gift_card" value="green"><img src="images/gift_card/green.jpg" alt="Green Gift Card " style="width:200px;height:140px;display: inline;"><br></label></li>
+<li><label><input type="radio" name="gift_card" value="pink"><img src="images/gift_card/pink.jpg" alt="Pink Gift Card" style="width:200px;height:140px;display: inline;"><br></label></li>
+<li><label><input type="radio" name="gidt_card" value="blue"><img src="images/gift_card/blue.jpg" alt="Blue Gift Card" style="width:200px;height:140px;display: inline;"><br></label></li>
+</ul>
+</form>
+
+<form id="card_value"> <h4>Select a value or enter an amount.</h4>
+<input type="range" name="Card value:" min="20" max="1000" >
+</form>
+<article id="card_value_info">
+Enter a value between $20-$1,000USD.
+</article>
+
+<br>
+<br>
+
+ </section>
+<!-- end choose a card -->
+<!-- delivery details -->
+ <section> 
+
+<h2>Delivery details</h2>
+  <form>
+	    <fieldset>
+	    <fieldset>
+	   <legend><strong>Recipient details</strong> </legend>
+ * Recipient name:<br>
+  <input type="text" placeholder="Who is this gift for?"  name="name"  required>
+  <br>
+   <br>
+   Telephone:<br>
+  <input type="tel" placeholder="" name="telephone"><br>
+  
+  <br>  
+ City:
+  <select name="cities">
+  <option value="Sofia" selected>Sofia</option>
+  <option value="Plovdiv">Plovdiv</option>
+  <option value="Varna">Varna</option>
+  <option value="Burgas">Burgas</option>
+</select><br>
+<br>
+  ZIP Code:
+  <br><input type="text" placeholder=""  name="zipCode"><br><br>
+  Address:
+  <br><input type="text" placeholder=""  name="address"><br>
+  <br>
+  
+  Your message:<br >
+		<textarea id="message" placeholder="Your personal message" name="message" rows="7" cols="28"></textarea><br>
+		
+
+
+    </fieldset>
+  
+  
+     <input type="submit" value="Add to bag">
+	 <input type="reset" value="Reset">
+  </fieldset><br><br>
+</section>
+		 <!-- end delivery details -->
 	   </section>
 	    <!-- end main section -->
 	  </div>
