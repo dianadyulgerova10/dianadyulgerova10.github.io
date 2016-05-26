@@ -247,13 +247,50 @@ header h1 {
   left: 10px;
 }	
 	
-nav { 
+nav { width: 100%;
     display: block;
-   position:relative;  
+   /* position:relative; */  
+   float:left;
    /* border: 2px solid red; */
 }
 
+/* aside */
+/*  .list-heading {
+    font-weight: normal;
+}  */
 
+
+.list-heading {
+    border: 2px solid #73AD21;
+}
+
+
+ul.side_bar li {border: 1px solid #C71585; }
+
+
+
+#product_content{
+	/* overflow:auto; */}
+
+aside{width:180px; float:left;
+
+float:left;
+width:30%;
+height:100%;
+/* 
+border: 3px solid #73AD21;  */
+}
+
+aside{
+	padding:0 20px 20px 30px;
+	/* border:3px solid #C71585; */
+	float: left; width: 10em;
+}
+
+
+
+
+/* end aside */
 
 footer {display: block;
    position:fixed;
@@ -334,43 +371,7 @@ ul#product_categories li {
 }
 
 
-/* aside */
-/*  .list-heading {
-    font-weight: normal;
-}  */
 
-
-.list-heading {
-    border: 2px solid #73AD21;
-}
-
-
-ul.side_bar li {border: 1px solid #C71585; }
-
-
-
-#product_content{
-	overflow:auto;}
-
-aside{width:180px; float:left;
-
-float:left;
-width:30%;
-height:100%;
-/* 
-border: 3px solid #73AD21;  */
-}
-
-aside{
-	padding:0 20px 20px 30px;
-	/* border:3px solid #C71585; */
-	float: left; width: 10em;
-}
-
-
-
-
-/* end aside */
 
 
 /* #index_content #main_index{ 
@@ -482,3 +483,14 @@ details table, details table th ,details table td ,details table tr
 	border: none;
 }
 /* end table details */
+
+
+ section.registration_form  ,section.login-form {
+	 padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+	border:none;
+	
+} 
+
