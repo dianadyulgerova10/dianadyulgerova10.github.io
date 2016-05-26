@@ -480,6 +480,7 @@ div#product_info ul{
 /* table details */
 details table, details table th ,details table td ,details table tr 
 {
+	 
 	border: none;
 }
 /* end table details */
@@ -494,3 +495,26 @@ details table, details table th ,details table td ,details table tr
 	
 } 
 
+
+.new_product>a>img{ 
+
+position:relative;
+border:1px solid red;}
+
+/* div#new_in{position:absolute} */
+
+div.relative {
+    position: relative;
+    width: 150px;
+    height: 215px;
+    border: 1px solid #73AD21;
+} 
+
+div.absolute {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #73AD21;
+}
