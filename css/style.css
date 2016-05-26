@@ -1,10 +1,234 @@
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+body {
+	
+	 font-size: 100%;
 	margin:0;
 		padding:0;
 		height:100%;
-	 padding: 0cm 1cm 2cm 1cm;
-	
+	 padding: 2em 2em 3em 2em;		
 }
+
+/* new */
+
+aside { 
+    display: block;
+}
+
+h1{
+display: block;
+    font-size: 2.5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;}
+h2 {
+     display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h4 { 
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h5 { 
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h6 { 
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+
+ p {
+	font-family: "Verdana", Verdana, serif;
+    display: block;
+	font-size:1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+	font-style:italic;
+}
+
+address { 
+    display: block;
+    font-style: italic;
+}
+
+strong { 
+    font-weight: bold;
+}
+
+small { 
+    font-size: smaller;
+	font-style:italic;
+}
+
+
+/* table */
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+	border: 1px solid #C71585;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+	 border: 1px solid #C71585;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+border: 1px solid #C71585;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+	border: 1px solid #C71585;	
+}
+
+
+/* end table */
+
+
+ul { 
+    display: block;
+    list-style-type: disc;  
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+	/* list-style-image: url('bullet.gif'); */
+}
+
+fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    /* border: 2px groove (internal value); */
+	border: 2px solid #73AD21;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+
+/* end new */
+
 header{display:inline;
 	position:relative;
 	 width: 100%;
@@ -23,13 +247,15 @@ header h1 {
   left: 10px;
 }	
 	
-nav {  
+nav { 
+    display: block;
    position:relative;  
+   /* border: 2px solid red; */
 }
 
 
 
-footer {
+footer {display: block;
    position:fixed;
 	width: 100%;
     bottom:0;	
@@ -47,7 +273,8 @@ float: left;
  }
 
 ul#nav_log{ display:inline;
-float: right;}
+float: right;
+list-style-image:none;}
 
 
 
@@ -98,7 +325,8 @@ ul#product_categories{
 	margin: auto;
     width: 50%;
 	display:inline;
-    padding: 10px;  }
+    padding: 10px;
+list-style-image:none;	}
 ul#product_categories li {
 	display:inline;
 		
@@ -235,3 +463,22 @@ output {
     font-size: 5.5em;
     font-weight: bold;
 }
+
+
+div#product_info ul{ 
+    display: block;
+    list-style-type: disc;  
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+	list-style-image: url('bullet.gif');
+}
+
+/* table details */
+details table, details table th ,details table td ,details table tr 
+{
+	border: none;
+}
+/* end table details */
