@@ -647,7 +647,10 @@ transform: rotate(7deg);}
 				h1 {
 					color: #660066;
 				}
-				body{background:#ffffe6}
+				body{background:ivory;}
 				
 				
 				}
+				
+			_:-ms-fullscreen, :root body { background:honeydew; }
+			
