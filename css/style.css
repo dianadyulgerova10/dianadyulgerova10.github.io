@@ -175,6 +175,24 @@ th {
 	 border: 1px solid #C71585;
 }
 
+
+
+/* #table_sizes>table>tbody>tr>th:nth-child(odd){border: 2px solid red;} */
+
+#table_sizes>table>tbody>tr>th{
+	/* background-color:rgb(221,160,221); */
+	
+	border: none} 
+
+#table_sizes>table>tbody>tr>td:nth-child(even){
+	 background-color: rgb(216,191,216 );
+	border: none;}
+	
+#table_sizes>table>tbody>tr>td:nth-child(odd){
+	 background-color: pink;
+	 border:none;
+	}
+	
 td {
     display: table-cell;
     vertical-align: inherit;
@@ -521,3 +539,10 @@ div.absolute {
     height: 50px;
    
 }
+
+/* #product_photos{transition:all .2s ease-in-out;} */
+#product_photos>img:hover{
+	transform: scale(1.5);
+}
+
+/* transform: rotate(7deg); */
