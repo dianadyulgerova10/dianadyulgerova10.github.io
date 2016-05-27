@@ -331,7 +331,13 @@ footer {display: block;
 	width: 100%;
     bottom:0;	
 }
+/* nav */
 
+nav{
+	
+	background:none;
+	border: 1px solid #CC0099;
+}
 
 ul#navigation_bar li {
     display:inline;
@@ -340,15 +346,74 @@ ul#navigation_bar li {
 
 ul#nav_store{ display:inline;
 float: left;
-
  }
+ 
+#nav_store{
+	 list-style:none;
+	 padding:0;
+	 margin:0;
+	 background:#FFCCCC;
+ }
+ 
+ ul#nav_store li{
+	 display:block;
+	 position:relative;
+	 float:left;
+ background:#FFCCCC;}
+ 
+ul#nav_store li ul{display:none;
+margin-top:0em;}
+
+ul#nav_store li a{
+	display:block;
+	padding:1em;
+	text-decoration:none;
+	white-space:nowrap;
+	color:green;
+} 
+
+ul#nav_store ul li a:hover{
+	
+	background:black;}
+
+ul#nav_store li:hover>ul{
+	display:block;
+	position:absolute;
+}
+
+
+ul#nav_store li:hover li{float:none;}
+
+ul#nav_store li:hover a{background:#CCFFFF;}
+
+/* ul#nav_store li:hover li a:hover{background:red;} */
+
+#nav_store li ul li{border-top:0;}
+
+
+
+ 
 
 ul#nav_log{ display:inline;
 float: right;
 list-style-image:none;}
 
 
+#nav_log:before,#nav_log:after {
 
+  content: " ";  display: table; 
+}
+ 
+
+#nav_log:after { clear: both; }
+
+
+ul#nav_store li a{border:4px solid white;}
+ul#nav_store li:first-child{
+	
+	background:#FF9999;}
+
+/* end nav */
 
 
 
