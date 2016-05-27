@@ -648,11 +648,16 @@ transform: rotate(7deg);}
 					color: #660066;
 				}
 				/* body{background:ivory;} */
-				
+				details{border:2px solid #F7E98E;}
 				
 				}
 				
 			_:-ms-fullscreen, :root h1 {
 				color:#006400;
 				 }
+				 
+				 
+			_:-ms-fullscreen, :root details {
+			border:2px solid #F7E98E;}
+			}	 
 			
