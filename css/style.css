@@ -329,14 +329,15 @@ aside{
 footer {display: block;
    position:fixed;
 	width: 100%;
-    bottom:0;	
+    bottom:0;
+/* border:1px solid red; */	
 }
 /* nav */
 
 nav{
 	
 	background:none;
-	border: 1px solid #CC0099;
+	/* border: 2px  solid #CC0099; */
 }
 
 ul#navigation_bar li {
