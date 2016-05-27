@@ -647,10 +647,12 @@ transform: rotate(7deg);}
 				h1 {
 					color: #660066;
 				}
-				body{background:ivory;}
+				/* body{background:ivory;} */
 				
 				
 				}
 				
-			_:-ms-fullscreen, :root body { background:honeydew; }
+			_:-ms-fullscreen, :root h1 {
+				color:#006400;
+				 }
 			
