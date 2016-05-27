@@ -180,7 +180,7 @@ th {
 /* #table_sizes>table>tbody>tr>th:nth-child(odd){border: 2px solid red;} */
 
 #table_sizes>table>tbody>tr>th{
-	/* background-color:rgb(221,160,221); */
+	/*  background-color:rgb(221,160,221);  */
 	
 	border: none} 
 
@@ -243,7 +243,23 @@ hr {
     border-width: 1px;
 }
 
+a:link {
+    color: #CC0099;
+}
 
+
+a:visited {
+    color: #990066;
+	
+}
+
+a:active {
+    color: green;
+}
+
+input:focus{
+	background-color:#c4ffc4;
+}
 
 /* end new */
 
@@ -548,3 +564,11 @@ div.absolute {
 #product_content div#main a img:hover{
 
 transform: rotate(7deg);}
+
+
+
+#main article p::first-letter{
+	font-style:;
+	font-size:2em;
+	color:#990066;
+}
