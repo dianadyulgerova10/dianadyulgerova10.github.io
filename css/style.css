@@ -503,11 +503,14 @@ border:1px solid red;}
 
 /* div#new_in{position:absolute} */
 
+a>img{ border: 2px solid #FF0099;}
+
+
 div.relative {
     position: relative;
     width: 150px;
     height: 215px;
-    border: 1px solid #73AD21;
+/*     border: 1px solid #73AD21; */
 } 
 
 div.absolute {
@@ -516,5 +519,5 @@ div.absolute {
     right: 0;
     width: 50px;
     height: 50px;
-    border: 1px solid #73AD21;
+   
 }
