@@ -641,3 +641,13 @@ transform: rotate(7deg);}
 
 
 #anchors{text-align:center;}
+
+
+@-moz-document url-prefix() {
+				h1 {
+					color: #660066;
+				}
+				body{background:#ffffe6}
+				
+				
+				}
