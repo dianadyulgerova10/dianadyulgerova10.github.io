@@ -545,4 +545,6 @@ div.absolute {
 	transform: scale(1.5);
 }
 
-/* transform: rotate(7deg); */
+#product_content div#main a img:hover{
+
+transform: rotate(7deg);}
