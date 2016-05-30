@@ -235,7 +235,7 @@ fieldset {
     padding-left: 0.75em;
     padding-right: 0.75em;
     /* border: 2px groove (internal value); */
-	border: 1px solid black;
+/* 	border: 1px solid black; */
 	
 }
 
@@ -276,16 +276,21 @@ header{/* display:inline;
 	padding:2px; */
 	position: relative;
     right: 0px;
-    width: 1300px;
+    width: 100%;
+	text-align:center;
+	
     /* border: 3px solid #73AD21; */
    /*  padding-top: 20px; */
-	margin-left:40%; margin-right:auto;
+/* 	margin-left:40%; */ 
+/* 	margin-right:auto; */
 	}
 header h1 {
-  position: relative;
+ /*  position: relative; */
   top: 18px;
   left: 10px;
-   float:left; 
+  /*  float:left; */ 
+   display:inline;
+   font-size:3em;
   
 }	
 header img {
@@ -293,6 +298,7 @@ header img {
   width: 50px;
   height: 50px;
   background: #555;
+  display:inline;
   /* right:0px; */
 }
 
@@ -323,7 +329,10 @@ background:#FAE7B5;
 border:none;
 margin:5px;}
 
-.side_bar a{ text-decoration: none;}
+.side_bar a{ text-decoration: none;
+padding:16px;
+color:green;
+}
 
 .side_bar li:hover {
     background-color: #CCFFFF;
@@ -359,7 +368,7 @@ textarea {
 
 footer {display: block;
    position:fixed;
-	width: 90%;
+	width: 95%;
     bottom:0;
 	background:#E4717A;
 	margin:0em 0.5em 0em 1em;
@@ -422,7 +431,11 @@ ul#nav_store li:hover a{background:#CCFFFF;}
 
 /* ul#nav_store li:hover li a:hover{background:red;} */
 
-#nav_store li ul li{border-top:0;}
+#nav_store li ul li{
+				border-top:0;
+				padding:1em;
+				text-align:center;
+				z-index:2;}
 
 
 
@@ -443,7 +456,7 @@ list-style-image:none;}
 
 
 ul#nav_store li a{border:4px solid white;}
-ul#nav_store li:first-child{
+ul#nav_store>li:first-child{
 	
 	background:#FF9999;}
 
@@ -465,11 +478,11 @@ section.login-form, section.registration_form{
 	text-align: center;
     margin: auto;
     width: 60%;
-    border: 3px solid #73AD21;
+  /*   border: 3px solid #73AD21; */
     padding: 10px;
 }
 
-section.registration_form{text-align:left;}
+/* section.registration_form{text-align:left;} */
 
 
 #product_photos{
@@ -688,7 +701,7 @@ nav {
 	width: 100%;
 	 height: 3em;
     top:0;
-	background:#E4717A;
+	background:#FCDC68;
 /* border:1px solid red; */	
 }
 
