@@ -81,7 +81,8 @@ display: block;
     margin-bottom: 0.67em;
     margin-left: 0;
     margin-right: 0;
-    font-weight: bold;}
+    font-weight: bold;
+	 text-shadow: 2px 3px rgba(209, 244, 176, 0.82)}
 h2 {
      display: block;
     font-size: 1.5em;
@@ -883,7 +884,7 @@ nav {
 
 /* about_us */
 
-#about_us_info{-webkit-column-count: 3; /* Chrome, Safari, Opera */
+.about_us_info{-webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
 	 -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
@@ -893,7 +894,7 @@ nav {
     -moz-column-rule: 2px solid #FFEF00; /* Firefox */
     column-rule: 2px solid #FFEF00;
 	}
-section#about_us_info h2 {
+section.about_us_info h2 {
     -webkit-column-span: all; /* Chrome, Safari, Opera */
 column-span: all;}	
 /* end about_us */
@@ -1007,7 +1008,21 @@ color:green;
   }
 }
  #product_categories img:hover{ 
- border:1px solid red; } 
+/*  border:3px solid #C71585; */
+/*   */
+/* border-image-slice: 30; */
+/* border-image-source:url("http://www.clker.com/cliparts/g/1/V/C/n/u/purple-wedding-borders-hi.png") ;
+ border-image-outset: 1;
+ border-image-repeat:stretch; */ 
+/*  border-style: solid; */
+
+ border: 0.3em solid transparent;
+
+ border-image:url(../images/product-border.jpg) 35 stretch;
+ 
+ 
+ 
+ } 
 
 /*  @keyframes fadein {
     from { opacity: 0; }
