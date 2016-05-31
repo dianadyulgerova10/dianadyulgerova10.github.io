@@ -403,12 +403,6 @@ width:100px;
 
 
 
-
-.side_bar a{ text-decoration: none;
-padding:16px;
-color:green;
-}
-
 .side_bar li:hover {
     background-color: #c4ffc4;
 }
@@ -939,11 +933,90 @@ ul #gift_card li{background: tomato;
   /*  */
   /*  */
 
+/* side bar anim */
+.side_bar{ padding: 0;
+    width: 170px;}	
+	
+.side_bar li{
+	
+	overflow: hidden;
+	display: block;
+	background: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	margin-bottom: 4px;
+	border-left: 10px solid #000;
+	transition: all 300ms ease-in-out;
+}
+.side_bar li:last-child{
+    margin-bottom: 0px;
+}
+.side_bar li a{
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+    color: #006400;
+  
 
+	
+    transition: all 300ms linear;
+}	
+	
+	.side_bar li:hover{
+    border-color: #fff004;
+    background: #c4ffc4;
+	border:1px solid #c4ffc4;
+}
+
+
+.side_bar li:hover a{
+    color:#006400;
+	
+    font-size: 14px;
+}
+
+	
+/* end side_bar anim */
+.side_bar a{ text-decoration: none;
+padding:16px;
+color:green;
+}
   
-  
-  
-  
+  /* picture product */
+#product_categories img{ ;
+	   margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+	border:none;
+	animation:vanishIn 1s;
+	
+}
+@keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    -webkit-filter: blur(90px);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    -webkit-filter: blur(0px);
+  }
+}
+ #product_categories img:hover{ 
+ border:1px solid red; } 
+
+/*  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} */
+
+ 
+
+  /* end picture product */
   
 @-moz-document url-prefix() {
 				h1 {
