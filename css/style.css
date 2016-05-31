@@ -530,7 +530,11 @@ list-style-image:none;}
 #nav_log:after { clear: both; }
 
 
-ul#nav_store li a{border:4px solid white;}
+ul#nav_store li a{border:4px solid white;
+ -o-transition: all 500ms;
+ -moz-transition: all 1500ms;
+ -webkit-transition: all 1500ms;
+ transition: all 1500ms;}
 ul#nav_store>li:first-child{
 	
 	background:#FF9999;}
@@ -771,7 +775,8 @@ transform: rotate(7deg);} */
 }
 
 
-#anchors{text-align:center;}
+#anchors{text-align:center;
+	}
 div#up{border:none;} 
 
 nav {
@@ -882,6 +887,7 @@ nav {
 #main_index_info{font-family: 'Italiana', serif;}
 /* end index */
 
+/* about_us */
 
 #about_us_info{-webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
@@ -895,9 +901,50 @@ nav {
 	}
 section#about_us_info h2 {
     -webkit-column-span: all; /* Chrome, Safari, Opera */
-    column-span: all;	
+column-span: all;}	
+/* end about_us */
+
+ul#gift_card{padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;}
+  
+  
+ul #gift_card li{background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;}
+  
+#contacts{ 
+  display: flex;
+	justify-content:flex-start;
+	-webkit-justify-content: space-between; /* Safari */
+	justify-content:space-between; 
+ }
+  /*  */
+  /*  */
 
 
+  
+  
+  
+  
+  
 @-moz-document url-prefix() {
 				h1 {
 					color: #660066;
