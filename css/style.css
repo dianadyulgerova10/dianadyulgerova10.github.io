@@ -86,6 +86,7 @@ display: block;
 	/*  text-shadow: 2px 3px rgba(209, 244, 176, 0.82); */
 	 letter-spacing: 2px;}
 h2 {
+	text-align:center;
      display: block;
     font-size: 1.5em;
     margin-top: 0.83em;
@@ -178,7 +179,7 @@ small {
 
 details{padding-top:1em;}
 
-
+hgroup{text-align:center;}
 /* table */
 
 table {
@@ -197,6 +198,10 @@ th {
 	 border: 1px solid #C71585;
 }
 
+img.product_small{width:150px;height:215px;}
+img.absolute_label{width:50px;height:50px;}
+
+img.product_big{width:200px;height:288px;}
 
 
 /* #table_sizes>table>tbody>tr>th:nth-child(odd){border: 2px solid red;} */
@@ -350,6 +355,8 @@ header a>img {
   border:none;
 }
 
+header img#logo{width:50px;
+height:50px;} 
 	
 	
 nav { width: 100%;
@@ -481,6 +488,7 @@ footer {display: block;
     bottom:0;
 	background:#E4717A;
 	margin:0em 0.5em 0em 1em;
+	Z-index:30;
 /* border:1px solid red; */	
 }
 /* nav */
@@ -622,7 +630,8 @@ ul#product_categories{
     width: 50%;
 	display:inline;
     padding: 10px;
-list-style-image:none;	}
+	list-style-type:none;
+	list-style-image:none;	}
 ul#product_categories li {
 	display:inline;
 		
@@ -632,7 +641,7 @@ ul#product_categories li {
 /* index*/
 #index_content , #product_content, #pr_content ,
  #contact_content , #details_content ,
-  #content{width:100%;
+  #content, #gift_card_content{width:100%;
 				height:100%;
 				margin:0 auto;
 				/* padding:20px; */
@@ -651,7 +660,7 @@ width: 100;
 
  #product_content #main ,#index_content #main, #pr_content #main_pr ,
  #contact_content #main, #details_content #main,
-  #content #main	
+  #content #main	, #gift_card_content #main
 
 {	
 
@@ -671,8 +680,7 @@ align-content:center;
  padding: 1em 1em 5em 1em;
  
 }
-
-
+#gift_card_content #main{text-align:center;}
  #pr_content #main_pr {border:1px solid #C71585; }
 
 /* #index_info{
@@ -689,9 +697,10 @@ height:200px;} */
 
 	#main_index_photo,#main_index_info,.about_us{text-align: center;}
 
+	#main_index_photo img{width:504px;height:500px;}
 
 div#details_photo{text-align: center;}
-	
+div#details_photo img{width:504px;height:388px;}	
 /* fieldset { 
     display: block;
     margin-left: 2px;
@@ -771,6 +780,21 @@ position:relative;
 border:1px solid red;}
 
 /* div#new_in{position:absolute} */
+
+
+.new_in_info{
+text-align:center;
+}
+.new_in_info img{width:550px;height:215px;}
+
+.on_sale_info{text-align:center;}
+.on_sale_info img{width:550px;height:215px;}
+
+
+
+
+
+
 
 a>img{ border: 2px solid #FF0099;}
 
@@ -945,6 +969,7 @@ column-span: all;}
 ul#gift_card{padding: 0;
   margin: 0;
   list-style: none;
+  list-style-type:none;
   
   display: -webkit-box;
   display: -moz-box;
@@ -967,6 +992,9 @@ ul #gift_card li{background: tomato;
   font-weight: bold;
   font-size: 3em;
   text-align: center;}
+
+img.gift_card{width:200px;height:140px;display: inline;} 
+  
   
 #contacts{ 
   display: flex;
@@ -979,7 +1007,8 @@ ul #gift_card li{background: tomato;
 
 /* side bar anim */
 .side_bar{ padding: 0;
-    width: 170px;}	
+    width: 170px;
+	list-style-type:none;}	
 	
 .side_bar li{
 	
@@ -1027,12 +1056,14 @@ color:green;
 }
   
   /* picture product */
-#product_categories img{ ;
-	   margin-top: 25px;
+#product_categories img{
+	width:250px;height:350px;
+	margin-top: 25px;
     font-size: 21px;
     text-align: center;
 	border:none;
 	animation:vanishIn 1s;
+	
 	
 }
 @keyframes vanishIn {
@@ -1051,13 +1082,7 @@ color:green;
   }
 }
  #product_categories img:hover{ 
-/*  border:3px solid #C71585; */
-/*   */
-/* border-image-slice: 30; */
-/* border-image-source:url("http://www.clker.com/cliparts/g/1/V/C/n/u/purple-wedding-borders-hi.png") ;
- border-image-outset: 1;
- border-image-repeat:stretch; */ 
-/*  border-style: solid; */
+
 
  border: 0.3em solid transparent;
 

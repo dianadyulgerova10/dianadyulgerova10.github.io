@@ -12,7 +12,7 @@
    </head>
    <body>
       <header>
-         <img src="images/logo.png" alt="Logo image" style="width:120px;height:120px;">
+         <img src="images/logo.png" id="logo" alt="Logo image">
          <h1>ONLINE STORE</h1>
          
       </header>
@@ -55,7 +55,7 @@
       <div id="content" >
          <!-- Aside bar -->
          <aside>
-            <ul class="side_bar" style="list-style-type:none">
+            <ul class="side_bar">
                <li><a href="new_in.html">NEW IN</a></li>
                <li><a href="on_sale.html">ON SALE</a></li>
                <li><a href="gift_card.html">GIFT CARD</a></li>
@@ -64,28 +64,23 @@
          <!--End Aside bar -->
          <!-- main section -->
          <section id="main">
-            <article style="text-align:center;">
-               <img src="images/onsale.jpg" alt="on_sale" style="width:550px;height:215px;">
+            <article class="on_sale_info">
+               <img src="images/onsale.jpg" alt="on_sale">
                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </article>
             <hr>
 			
 			
 			<div class="relative">
-            <a href="top3.html"> <img src="images/tops/3-1.jpg" alt="Top1-1" style="width:150px;height:215px;"></a>
+            <a href="top3.html"> <img class="product_small" src="images/tops/3-1.jpg" alt="Top1-1" ></a>
 			<div class="absolute">
-			<a href="top3.html"><img  src="images/sale.jpg" alt="Sale"  style="width:50px;height:50px;"></a>
+			<a href="top3.html"><img class="absolute_label" src="images/sale.jpg" alt="Sale"></a>
 			</div>
 			</div>
 			
             <details>
                <summary>Buy now</summary>
-              <!--  <table>
-                  <tr>
-                     <td>	<img src="images/tops/3-2.jpg" alt="top3-2" style="width:200px;height:288px;"></td>
-                     <td>	<img src="images/tops/3-3.jpg" alt="top3-3" style="width:200px;height:288px;"></td>
-                     <td>	<img src="images/tops/3-4.jpg" alt="top3-4" style="width:200px;height:288px;"></td>
-                     <td> -->
+         
                         <div>
                            
                            Size:<br>
@@ -96,27 +91,21 @@
                            <br>
                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="submit" value="Add to bag">
                         </div>
-                    <!--  </td>
-                  </tr>
-               </table> -->
+               
             </details>
             <hr>
 			
 			
 			<div class="relative">
-            <a href="shoes3.html"> <img src="images/shoes/3-1.jpg" alt="Shoes3-1" style="width:150px;height:215px;"></a>
+            <a href="shoes3.html"> <img class="product_small" src="images/shoes/3-1.jpg" alt="Shoes3-1" ></a>
 			<div class="absolute">
-			<a href="shoes3.html"><img  src="images/sale.jpg" alt="Sale"  style="width:50px;height:50px;"></a>
+			<a href="shoes3.html"><img class="absolute_label" src="images/sale.jpg" alt="Sale"></a>
 			</div>
 			</div>
 		
             <details>
                <summary>Buy now</summary>
-               <!-- <table>
-                  <tr>
-                     <td>	<img src="images/shoes/3-2.jpg" alt="Shoes3-2" style="width:200px;height:288px;"></td>
-                     <td>	<img src="images/shoes/3-3.jpg" alt="Shoes3-3" style="width:200px;height:288px;"></td>
-                     <td> -->
+
                         <div>
                           
                            Size:<br>
@@ -127,9 +116,6 @@
                            <br>
                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="submit" value="Add to bag">
                         </div>
-                     <!-- </td>
-                  </tr>
-               </table> -->
             </details>
          </section>
          <!-- end main section -->
