@@ -373,15 +373,15 @@ nav { width: 100%;
 }
 
 /* side bar style */
-ul.side_bar li {border: 1px solid #C71585; 
+ul.side_bar li {border-left: 10px solid  rgba(252, 208, 104, 0.79); 
 text-align:center;
 padding:1em;
 background:#FAE7B5;
-border:none;
+/* border:none; */
 width:130px;
     display: inline-block;
     position: relative;
-    margin: 10px;
+ /*    margin: 10px; */
 
     text-align: center;
     text-decoration: none;
@@ -852,6 +852,10 @@ nav {
     -moz-box-sizing:border-box; */
     box-sizing:border-box
 }
+
+.product_picture figure figcaption  p{letter-spacing:normal;}
+
+
 .product_picture figure h2 {
 
     color:#fff;
