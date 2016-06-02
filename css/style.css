@@ -179,7 +179,6 @@ fieldset {
     padding-bottom: 0.625em;
     padding-left: 0.75em;
     padding-right: 0.75em;
-    border: 1px solid black;
 }
 hr {
     display: block;
@@ -267,9 +266,7 @@ tr {
     align-content: center;
     padding: 1em 1em 5em 1em;
 }
-#pr_content #main_pr {
-    border: 1px solid #C71585;
-}
+
 
 #main_index_photo,
 #main_index_info,
@@ -301,6 +298,9 @@ img.gift_card {
     height: 140px;
     display: inline;
 }
+img.contact_us_img{width:256px;
+height:269px;
+padding:2em;}
 /* END IMAGES */
 
 /* HEADER*/
@@ -484,25 +484,13 @@ ul.side_bar li {
 #product_content ul.side_bar li {
     padding: 1em;
     background: #FAE7B5;
+	border:none;
     width: 100px;
     display: inline-block;
     position: relative;
-    margin: 0px;
+    margin: -0.2em;
     text-align: center;
     text-decoration: none;
-    font: bold 12px/25px Arial, sans-serif;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, .22);
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
-    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
-    -webkit-transition: all 0.15s ease;
-    -moz-transition: all 0.15s ease;
-    -o-transition: all 0.15s ease;
-    -ms-transition: all 0.15s ease;
-    transition: all 1.15s ease;
 }
 .side_bar li:hover {
     background-color: #c4ffc4;
@@ -517,6 +505,7 @@ ul.side_bar li {
     padding: 0;
     width: 170px;
     list-style-type: none;
+	text-align:center;
 }
 .side_bar li {
     overflow: hidden;
@@ -779,6 +768,7 @@ section.about_us_info h2 {
     justify-content: flex-start;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+	padding:3em 11em;
 }
 #contact_content #main {
     position: relative;
@@ -807,6 +797,10 @@ section.registration_form,
 section.login-form {
     margin-top: 100px;
     border: 2px solid rgb(181, 216, 250);
+}
+
+section.registration_form fieldset{
+	 border: 1px solid black;
 }
 /* END LOGIN REGISTRATION */
 
