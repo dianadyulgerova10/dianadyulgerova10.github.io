@@ -370,6 +370,12 @@ nav {
     float: left;
     background: rgba(252, 208, 104, 0.79);
 }
+
+
+img#hamburger{width:20px;
+height:20px;
+display:none;}
+
 ul#navigation_bar li {
     display: inline;
 }
@@ -929,6 +935,12 @@ ul #gift_card li {
         }
     }
  /* END ANIMATIONS */
+	
+	#nav-trigger{
+		visibility:hidden;
+	}
+	
+	
 	
 /* hacks */
     
