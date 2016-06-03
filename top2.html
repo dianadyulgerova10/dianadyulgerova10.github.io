@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta name="description" content="Online store">
-      <meta name="keywords" content="clothes,store,skirts,tops,shoes,skirt,top">
-      <meta name="author" content="">
-      <link rel="stylesheet" href="css/style.css">
-      <meta charset="UTF-8">
-      <link rel="icon"  href="favicon.ico"  type="image/x-icon" sizes="16x16">
-      <link href='https://fonts.googleapis.com/css?family=Italiana|Cinzel' rel='stylesheet' type='text/css'>
-	  <title>Online Store</title>
+    <meta name="description" content="Online store">
+    <meta name="keywords" content="clothes,store,skirts,tops,shoes,skirt,top">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link href='https://fonts.googleapis.com/css?family=Italiana|Cinzel' rel='stylesheet' type='text/css'>
+    <script  src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<meta charset="UTF-8">
+    <link rel="icon"  href="favicon.ico"  type="image/x-icon" sizes="16x16">
+    <title>Online Store</title>
    </head>
    <body>
       <header>
@@ -16,14 +19,17 @@
          <h1>ONLINE STORE</h1></a>
          
       </header>
-      <!-- Navigation -->
-     <nav>
+<!-- Navigation -->
+      <nav>
+	  <a href="#menu" class="menu-link">
+	  <img id="hamburger" src="images/hamburger.png"></a>
+	  <div id="menu" role="navigation">
          <ul id="navigation_bar">
             <li>
                <ul id="nav_store">
                   <li><a href="products.html" >PRODUCTS </a> 
 				 
-						<ul>
+						<ul class="hide">
 							<li><a href="tops.html"> TOPS </a></li>
 							<li><a href="skirts.html"> SKIRTS </a></li>	
 							<li><a href="shoes.html">SHOES</a></li>
@@ -46,7 +52,7 @@
                </ul>
             </li>
          </ul>
-       
+       </div>
       </nav>
       <!-- End Navigation -->
       <!--Content -->

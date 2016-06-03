@@ -181,6 +181,7 @@ fieldset {
     padding-bottom: 0.625em;
     padding-left: 0.75em;
     padding-right: 0.75em;
+	border-top:1px solid black;
 }
 hr {
     display: block;
@@ -302,7 +303,12 @@ img.gift_card {
 }
 img.contact_us_img{width:256px;
 height:269px;
-padding:2em;}
+padding:2em;
+}
+img.social_img{
+	width:300px;
+	height:65px;
+}
 /* END IMAGES */
 
 /* HEADER*/
@@ -738,10 +744,11 @@ div#product_info ul {
 
 div#details_photo {
     text-align: center;
+	padding-top:40px;
 }
 div#details_photo img {
-    width: 504px;
-    height: 388px;
+    width: 717px;
+    height: 525px;
 }
 .about_us_info {
     -webkit-column-count: 3;

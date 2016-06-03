@@ -3,11 +3,11 @@
 	
 	/* common */
 	body {
-    font-size: 90%;
+    
     margin: 0;
     padding: 0;
 	width: 100%;
-    padding: 0em 1em 1em 1em;
+    /* padding: 0em 1em 1em 1em; */
     font-family: 'Cinzel', serif;
     font-weight: bold;
     line-height: 150%;	
@@ -55,6 +55,31 @@ p {
     line-height: 120%;
 }
 
+select{
+	font-size:22px;
+}
+
+input{
+	width:40%;
+	height:2.5em;
+}
+
+::-webkit-input-placeholder {font-size:22px;}
+::-moz-placeholder { font-size:22px;} /* firefox 19+ */
+:-ms-input-placeholder { font-size:22px;} /* ie */
+input:-moz-placeholder {  font-size:22px;}
+
+
+input[type="radio"]{
+	width:22px;
+}
+input[type="submit"]{
+	font-size:22px;
+}
+input[type="reset"]{
+	font-size:22px;
+}
+
 #index_content > aside > ul {
 	display: none;
 }
@@ -62,9 +87,19 @@ p {
 #index_content, #product_content, 
 #pr_content, #contact_content, #details_content,
  #content, #gift_card_content{
-	 margin-left:-4em;
-	 margin-top:-3em;
+	 padding:0;
  }
+ 
+ 
+ #product_content #main, #index_content #main, #pr_content #main_pr, 
+ #contact_content #main, 
+ #details_content #main, #content #main,
+ #gift_card_content #main
+ {width:100%;
+ padding:0;
+ }
+ 
+aside{display:none;}
  
   /* hamb */
 /*   #navigation_bar{
@@ -90,12 +125,11 @@ display:block;}
 		}
 		#menu[role=navigation] {
 			clear: both;
-			-webkit-transition: all 3s ease-out;  
+			/* -webkit-transition: all 3s ease-out;  
 			-moz-transition: all 3s ease-out;
 			-ms-transition: all 3s ease-out;
 			-o-transition: all 3s ease-out;
-			transition: all 3s ease-out; 
-			
+			transition: all 3s ease-out;  */	
 		}
 		.js #menu[role=navigation] {
 			overflow: hidden;
@@ -151,12 +185,19 @@ display:block;}
 ul#nav_store{
 	float:none;
 }
+
+#nav_store > li:nth-child(1) > ul > li{
+	display: none;
+}
   
 /* 
 
 
  
 /* end hamb */
+
+
+
 
 /* index */
 
@@ -167,10 +208,43 @@ ul#nav_store{
 /* end index */
 
 
+/* login registration */
+
+section.registration_form, section.login-form{
+	display:block;
+	font-size:1.9em;
+	line-height:50px;
+	border:none;
+	width:90%;	
+	margin:auto;
 }
 
-/* end common */
+section.login-form{
+	padding-top:100px;
+	
+}
 
+
+
+/* section.login-form{
+	margin-top:12em;
+} */
+
+body > section > div.login > form > fieldset > label{
+	display:none;}
+
+/* end login registration */
+
+
+
+/* about us */
+.about_us_info{
+	column-count:1;
+}
+
+/* end about us */
+
+}
 /* END TABLETS */
 
 
@@ -240,7 +314,7 @@ p {
 #index_content, #product_content, 
 #pr_content, #contact_content, #details_content,
  #content, #gift_card_content{
-	 margin-left:-7em;
+/* 	 margin-left:-7em; */
  }
 
 }	
