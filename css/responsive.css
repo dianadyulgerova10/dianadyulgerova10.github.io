@@ -11,6 +11,7 @@
     font-family: 'Cinzel', serif;
     font-weight: bold;
     line-height: 150%;	
+	font-size:1.2em;
 }
 
 
@@ -21,7 +22,7 @@ h1 {
     letter-spacing: 2px;
 }
 h2 {
-    font-size: 1.4em;
+    font-size: 1.7em;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
     letter-spacing: 2px;
@@ -48,7 +49,7 @@ h6 {
     letter-spacing: 2px;
 }
 p {
-    font-size: 0.9em;
+    font-size: 1.4em;
     margin-top: 1em;
     margin-bottom: 1em;
     letter-spacing: 1px;
@@ -74,18 +75,25 @@ input[type="radio"]{
 	width:22px;
 }
 input[type="submit"]{
-	font-size:22px;
+	font-size:16px;
 }
 input[type="reset"]{
-	font-size:22px;
+	font-size:16px;
 }
 
 
 
 textarea{
-	width:25em;
-	height:15em;
+	width:19em;
+	height:10em;
+	font-size:16px;
 }
+
+
+hr{
+	display:none;
+}
+
 
 #index_content > aside > ul {
 	display: none;
@@ -212,6 +220,11 @@ ul#nav_store{
 	column-count:1;
 }
 
+#main_index_photo img{
+	width:887px;
+	height:806px;
+}
+
 /* end index */
 
 
@@ -219,7 +232,7 @@ ul#nav_store{
 
 section.registration_form, section.login-form{
 	display:block;
-	font-size:1.9em;
+	font-size:1.5em;
 	line-height:50px;
 	border:none;
 	width:90%;	
@@ -249,6 +262,11 @@ body > section > div.login > form > fieldset > label{
 	column-count:1;
 }
 
+#details_photo img{
+	width:821px;
+	height:585px;
+}
+
 /* end about us */
 
 
@@ -258,8 +276,83 @@ body > section > div.login > form > fieldset > label{
 #contacts{
 	flex-flow:column wrap;
 }
+.contact_us input[type="submit"]{
+	font-size:14px;
+}
 
 /* end contacts */
+
+/* categories */
+
+#categories{
+	display:flex;
+}
+
+/* end categories */
+
+/* products */
+
+#index_content #main{
+	padding-bottom:2em;
+}
+
+#product_content #main{
+	text-align:-webkit-center;
+	padding-bottom:2em;
+}
+.product_picture{
+	height:auto;
+	width:auto;
+}
+.product_picture figure img{
+	margin:0;
+	height:465px;
+	width:386px;
+}
+
+#product_content #main details{
+	display:none;
+}
+
+.product_picture figure figcaption{
+	display:none;
+}
+.product_picture figure a:hover{
+	
+	}
+	
+#product_categories img{
+	width:369px;
+	height:486px;
+}	
+
+/* end products */
+
+/* product */
+
+
+#pr_content #main_pr{
+	display:flex;
+	flex-direction:column;
+	text-align:-webkit-center;
+	padding:3em 0em;
+}
+
+#product_order input{
+	width:7em;
+	height:1.5em;
+	font-size:15px;
+}
+#product_order input[type="radio"]{
+	width:2em;
+}
+
+img.product_big{
+	width:285px;
+	height:392px;
+}
+
+/* end product */
 
 }
 /* END TABLETS */
