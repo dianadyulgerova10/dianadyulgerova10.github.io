@@ -471,7 +471,7 @@ aside {
     float: left;
     height: 15em;
     width: 10em;
-    padding: 0px 0px 0px 0px;
+    padding: 10em 0px 0px 0px;
 }
 ul.side_bar li {
     border-left: 10px solid rgba(252, 208, 104, 0.79);
@@ -520,6 +520,7 @@ ul.side_bar li {
     width: 170px;
     list-style-type: none;
 	text-align:center;
+	
 }
 .side_bar li {
     overflow: hidden;
@@ -578,6 +579,8 @@ article#main_index_info h4 {
 #main_index_info {
     font-family: 'Italiana', serif;
 }
+
+.side_index{border:1px solid black;}
 /* END INDEX */
 
 
