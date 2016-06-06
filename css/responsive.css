@@ -99,11 +99,11 @@ hr{
 	display: none;
 }
 
-#index_content, #product_content, 
+/* #index_content, #product_content, 
 #pr_content, #contact_content, #details_content,
  #content, #gift_card_content{
 	 padding:0;
- }
+ } */
  
  
  #product_content #main, #index_content #main, #pr_content #main_pr, 
@@ -276,10 +276,44 @@ body > section > div.login > form > fieldset > label{
 
 #contacts{
 	flex-flow:column wrap;
+	padding:0em;
 }
 .contact_us input[type="submit"]{
-	font-size:14px;
+	font-size:22px;
+	
 }
+#contact_content #main{
+	font-size:1.5em;
+}
+#contacts input{
+	width:25em;
+	margin:2em;
+}
+#contacts textarea{
+	height:25em;
+	width:30em;
+}
+
+.contact_us_img{
+	display:none;]
+}
+
+#contacts address{
+	font-size:.8em;
+	line-height:1.5em;
+}
+
+#contacts  input[type="submit"]{
+	width:7em;
+	margin:1em;
+}
+#contact_img{
+	display:block;	
+}
+#contact_img img{
+	width: 934px;
+    height: 290px;
+	}
 
 /* end contacts */
 
@@ -349,8 +383,8 @@ body > section > div.login > form > fieldset > label{
 }
 
 img.product_big{
-	width:285px;
-	height:392px;
+	width:476px;
+	height:739px;
 }
 
 /* end product */
@@ -372,6 +406,10 @@ img.product_small{
 	height:418px;
 }
 
+.new_in_info img, .on_sale_info img{
+	width:966px;
+	height:263px;
+}
 
 
 /* end new in on sale */

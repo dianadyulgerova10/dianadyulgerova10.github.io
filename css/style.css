@@ -840,6 +840,9 @@ section.about_us_info h2 {
     float: right;
 }
 
+#contact_img{
+	display:none;
+}
 /* END CONTACT US */
 
 /* LOGIN REGISTRATION */
