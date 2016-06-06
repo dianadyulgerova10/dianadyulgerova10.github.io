@@ -5,9 +5,9 @@
 	body {
     
     margin: 0;
-    padding: 0;
+   /*  padding: 0; */
 	width: 100%;
-    /* padding: 0em 1em 1em 1em; */
+    padding: 0em 1em 1em 1em;
     font-family: 'Cinzel', serif;
     font-weight: bold;
     line-height: 150%;	
@@ -111,7 +111,8 @@ hr{
  #details_content #main, #content #main,
  #gift_card_content #main
  {width:100%;
- padding:0;
+ padding: 1em 1em 5em 1em;
+  text-align: -webkit-center;
  }
  
 aside{display:none;}
@@ -310,9 +311,9 @@ body > section > div.login > form > fieldset > label{
 	width:386px;
 }
 
-#product_content #main details{
+/* #product_content #main details{
 	display:none;
-}
+} */
 
 .product_picture figure figcaption{
 	display:none;
@@ -353,6 +354,29 @@ img.product_big{
 }
 
 /* end product */
+
+
+
+
+/* new in on sale */
+
+
+div.relative{
+	
+	width:319px;
+	height:418px;	
+}
+
+img.product_small{
+	width:319px;
+	height:418px;
+}
+
+
+
+/* end new in on sale */
+
+
 
 }
 /* END TABLETS */
