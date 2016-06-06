@@ -60,7 +60,7 @@ select{
 }
 
 input{
-	width:40%;
+	width:20em;
 	height:2.5em;
 }
 
@@ -78,6 +78,13 @@ input[type="submit"]{
 }
 input[type="reset"]{
 	font-size:22px;
+}
+
+
+
+textarea{
+	width:25em;
+	height:15em;
 }
 
 #index_content > aside > ul {
@@ -244,6 +251,16 @@ body > section > div.login > form > fieldset > label{
 
 /* end about us */
 
+
+
+/* contacts */
+
+#contacts{
+	flex-flow:column wrap;
+}
+
+/* end contacts */
+
 }
 /* END TABLETS */
 
@@ -273,7 +290,7 @@ h1 {
     letter-spacing: 2px;
 }
 h2 {
-    font-size: 1.4em;
+    font-size: 1.7em;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
     letter-spacing: 2px;

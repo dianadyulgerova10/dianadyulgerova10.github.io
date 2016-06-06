@@ -780,10 +780,12 @@ section.about_us_info h2 {
 }
 #contacts {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-	padding:3em 11em;
+	align-items:center;
+	text-align:center;
+	padding:5em 4em;
 }
 #contact_content #main {
     position: relative;
