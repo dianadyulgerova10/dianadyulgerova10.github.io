@@ -51,6 +51,12 @@ h4 {
     margin-bottom: 1.33em;
     letter-spacing: 2px;
 }
+
+
+.search_show{
+	display:block !important;
+}
+
 h5 {
     font-size: .73em;
     margin-top: 1.67em;
@@ -140,8 +146,8 @@ aside{display:none;}
 /*   #navigation_bar{
 	display:none;
 } */
- img#hamburger{width:50px;
-height:50px;
+ img#hamburger{width:30px;
+height:30px;
 display:block;}
  
 /*  a#hamburger {
@@ -150,11 +156,19 @@ display:block;}
 		    padding: 1em;
 		} */
   
-  nav{height:initial;}
+  nav{height:initial;
+      text-align: -webkit-right;}
   
-ul#nav_search{
+div#nav_search{
 	display:none;
 }
+
+#search_input{
+	padding:0;
+}
+
+
+
 #navigation_bar > li:nth-child(2){
 	display:inline;
 	float:none;
