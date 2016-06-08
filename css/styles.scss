@@ -336,6 +336,23 @@ footer {
     margin: 0em 0.5em 0em 1em;
     Z-index: 30;
 }
+
+ul.social_links li{
+	list-style:none;
+	a{
+		display:block;
+		float:left;
+		width:30px;
+		height:25px;
+	}	
+}
+
+$icons:(facebook,twitter,google);
+@each $social in $icons {
+	.#{$social}{background:url('../images/social/#{$social}.png') no-repeat center;}
+}
+
+
 /* END FOOTER */
 
 /* NAV */

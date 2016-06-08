@@ -345,6 +345,23 @@ footer {
   margin: 0em 0.5em 0em 1em;
   Z-index: 30; }
 
+ul.social_links li {
+  list-style: none; }
+  ul.social_links li a {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 25px; }
+
+.facebook {
+  background: url("../images/social/facebook.png") no-repeat center; }
+
+.twitter {
+  background: url("../images/social/twitter.png") no-repeat center; }
+
+.google {
+  background: url("../images/social/google.png") no-repeat center; }
+
 /* END FOOTER */
 /* NAV */
 nav {
