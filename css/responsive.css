@@ -146,8 +146,8 @@ aside{display:none;}
 /*   #navigation_bar{
 	display:none;
 } */
- img#hamburger{width:30px;
-height:30px;
+ img#hamburger{    width: 50px;
+    height: 50px;
 display:block;}
  
 /*  a#hamburger {
@@ -250,7 +250,33 @@ ul#nav_store{
 
  
 /* end hamb */
+/* navigation */
+#navigation{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+li#left_nav{
+	float:left;
+}
+li#right_nav{
+	float:right;
+}
 
+li#right_nav{margin-top:-2.6em;}
+img#search{width:50px;
+height:50px;
+display:inline;}
+img#nav_login_img{
+	width:50px;
+	height:50px;
+	display:inline;
+}
+#search{
+    margin-top: 0;
+    margin-right:0;
+}
+/* end navigation */
 
 
 
@@ -557,6 +583,19 @@ img#hamburger {
 	padding:1em;
 	font-size:0.6em;
 }
+
+
+img#search{ width: 27px;
+    height: 27px;}
+img#nav_login_img{
+	 width: 27px;
+    height: 27px;
+}
+   
+li#right_nav {
+    margin-top: -1.29em;
+}
+
 /* end nav */
 
  
@@ -585,8 +624,8 @@ img#hamburger {
 
 /* end index */
 
-
-
+/*  */
+/*  */
 /* categories */
 #categories{
 	display:block;

@@ -23,9 +23,12 @@
 
        <!-- Navigation -->
       <nav>
+	  <ul id="navigation">
+	  <li id="left_nav">
 	  <a href="#menu" class="menu-link">
 	  <img id="hamburger" src="images/hamburger.png"></a>
-	  <div id="menu" role="navigation">
+	  </li>
+					<div id="menu" role="navigation">
          <ul id="navigation_bar">
             <li>
                <ul id="nav_store">
@@ -48,19 +51,22 @@
                   <li><a href="login.html">Login</a></li>     
                   <li><a href="registration.html">Register</a></li> 
                </ul>
-			   <ul id="nav_search"><li>
+			  
+            </li>
+         </ul>
+       </div>
+	  <li id="right_nav"> <a  id="search_link"><img id="search" src="images/search.png"></a>
+					<div id="nav_search">
 				<form id="search" method="get" action="http://www.google.com">
 						<input type="text" id="search_input" name="q" size="10" maxlength="120">
 						<input type="submit" value="search" id="search_button">
 						</form>
-					</li>
-				</ul>
-            </li>
-         </ul>
-       </div>
+				</div> 
+			<a id="nav_login" href="login.html">
+				<img  id="nav_login_img" src="images/login.png"></a>
+				</li></ul>
       </nav>
       <!-- End Navigation -->
-	  
       <!--Content -->
       <div id="pr_content">
          <!-- Aside bar -->

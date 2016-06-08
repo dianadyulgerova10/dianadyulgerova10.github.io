@@ -378,7 +378,12 @@ nav {
     float: left;
     background: rgba(252, 208, 104, 0.79);
 }
-
+img#search{
+	display:none;
+	}
+img#nav_login_img{
+	display:none;
+}
 
 img#hamburger{width:20px;
 height:20px;
@@ -506,7 +511,12 @@ ul#nav_store>li:first-child {
 		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
 		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
 	}
-
+#search {
+    float: right;
+    margin-top: -1.5em;
+    margin-right: 0.5em;
+}
+	
 /* end search */
 
 
