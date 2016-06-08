@@ -471,6 +471,10 @@ ul#nav_store>li:first-child {
 
 
 /* search */
+#navigation{
+	list-style-type:none;
+}
+
 #navigation_bar > li:nth-child(2){
 	    display: table;
     float: right;
@@ -513,7 +517,7 @@ ul#nav_store>li:first-child {
 	}
 #search {
     float: right;
-    margin-top: -1.5em;
+    
     margin-right: 0.5em;
 }
 	
@@ -529,7 +533,7 @@ aside {
     float: left;
     height: 15em;
     width: 10em;
-    padding: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 ul.side_bar li {
     border-left: 10px solid rgba(252, 208, 104, 0.79);
