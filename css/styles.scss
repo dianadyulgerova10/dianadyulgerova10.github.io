@@ -26,13 +26,34 @@ $footer-color:#E4717A;
   height:$height;
 }
 
+
+%tb{    
+	display: table-cell;
+    vertical-align: inherit;
+    border: 1px solid #C71585;
+}
+
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* @function tx_contrast($background)
+{
+	@if lightness($background)<50%{@return yellow;}
+	@else{@return black;}
+} */
+
 /* end sass */
 
 /* COMMON*/
 
 
 
-body {
+body 
+{
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -220,22 +241,17 @@ table {
     border: 1px solid #C71585;
 }
 th {
-    display: table-cell;
-    vertical-align: inherit;
+    @extend %tb;
     font-weight: bold;
     text-align: center;
-    border: 1px solid #C71585;
 }
+
 td {
-    display: table-cell;
-    vertical-align: inherit;
-    border: 1px solid #C71585;
+    @extend %tb;
 }
 tr {
+	@extend td;
     display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-    border: 1px solid #C71585;
 }
 
 
@@ -252,7 +268,6 @@ tr {
 #product_content #main,#index_content #main,
 #pr_content #main_pr,#contact_content #main,
 #details_content #main,#content #main,#gift_card_content #main {
-    float: left;
     width: 80%;
     float: left;
     padding: 0 20px 20 px 20px;
@@ -271,8 +286,8 @@ tr {
 /* IMAGES */
 
 #main_index_photo img {
-    width: 504px;
-    height: 500px;
+    width: em(504);
+    height: em(500);
 }
 img.product_small {
     width: 216px;
@@ -334,9 +349,18 @@ header {
 	 img#logo {
 		 @include size(50px,50px);	
    	}
-
-	
 }
+
+$j:1;
+$pbg:black;
+
+@while $j<10{
+	#main_index_info>p:nth-child(#{$j}){color:$pbg+10*$j;}
+	$pbg:lighten($pbg,5%);
+	$j:$j+1;	
+}
+
+
 
 
 /* END HEADER */
@@ -351,6 +375,9 @@ footer {
     margin: 0em 0.5em 0em 1em;
     Z-index: 30;
 }
+
+
+
 
 ul.social_links li{
 	list-style:none;
@@ -459,9 +486,7 @@ ul#nav_log {
 }
 
   @for $i from 1 through 2{
-	
 	/* #nav_log li:nth-child(#{$i}){border:1px*$i solid red;} */
-	
 } 
  
 
@@ -481,6 +506,14 @@ ul#nav_store>li:first-child {
     background: #FF9999;
 }
 
+$k:1;
+$navbg:#f1a0a6;
+
+@while $k<10{
+	ul#nav_store li:nth-child(#{$k}){background:$navbg+12*$k;}
+	$pbg:lighten($navbg,15%);
+	$k:$k+1;	
+}
 
 /* search */
 #navigation{
@@ -828,9 +861,12 @@ figure.hover figcaption {
 /* table_sizes */
 #table_sizes {
     float: left;
-    width: 33%;
+    width: 33%; 
 }
+
+
 #table_sizes>table>tbody>tr>th {
+	@entend #table_sizes;
     border: none
 }
 #table_sizes>table>tbody>tr>td:nth-child(even) {
@@ -1106,3 +1142,4 @@ ul #gift_card li {
 
 /* end hacks */
 
+@import "responsive"
