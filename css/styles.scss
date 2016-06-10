@@ -907,7 +907,8 @@ section.registration_form {
 section.registration_form,
 section.login-form {
     margin-top: 100px;
-    border: 2px solid rgb(181, 216, 250);
+    border: 2px solid $light-blue;
+	margin-bottom: 3em;
 }
 
 section.registration_form fieldset{

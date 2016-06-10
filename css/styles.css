@@ -931,7 +931,8 @@ section.registration_form {
 section.registration_form,
 section.login-form {
   margin-top: 100px;
-  border: 2px solid #b5d8fa; }
+  border: 2px solid #b5d8fa;
+  margin-bottom: 3em; }
 
 section.registration_form fieldset {
   border: 1px solid black; }

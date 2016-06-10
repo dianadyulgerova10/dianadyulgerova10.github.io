@@ -3,6 +3,7 @@ $font: 'Cinzel', serif;
 $footer-color:#E4717A;
 $nav-color:#FFCCCC;
 $nav-bg:rgba(252, 208, 104, 0.79);
+$light-blue:rgb(181, 216, 250);
 
 @mixin linx ($link, $visit, $hover, $active) {
   a {
