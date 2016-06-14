@@ -1,5 +1,4 @@
 
-
 // 1.1. JavaScript literals
 // Assign all the possible JavaScript literals(boolean/floating-point/integer/object/string) to different variables.
 
@@ -51,11 +50,13 @@ console.log("person=" + person + "," + typeof(person));
 console.log("address=" + address + "," + typeof(address));
 console.log("dayOfWeek=" + dayOfWeek+ ","+ typeof(dayOfWeek));
 console.log("dayOfWeek[0]=" + dayOfWeek[0]+ ","+typeof(dayOfWeek[0]));
+console.log("null instance of Object? " + (null instanceof(Object)));
 console.log("null === undefined " + (null===undefined)); 
 console.log("null == undefined " + (null==undefined)); 
 console.log("date=" + date + "," + typeof(date));
 console.log(func + "," + typeof(func));
 console.log("numObj=" + numObj + "," + typeof(numObj));
+console.log("undefined variable- " + typeof(none));
 var a=5;
 var b=4;
 console.log("a=" + a + "," +typeof(a));
