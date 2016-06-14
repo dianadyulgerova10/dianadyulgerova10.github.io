@@ -20,6 +20,7 @@ var x=0.5;
 var y=10;
 var xy=(x>y);
 var char="c";
+var sym=Symbol();
 var str1="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
 var str2='"Lorem ipsum dolor sit amet, consectetur adipiscing elit."'
 var str3="\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\""
@@ -32,6 +33,10 @@ var dayOfWeek=["Monday", "Tuesday","Wednesday"];
 var date=new Date();
 var func=Function();
 var numObj=new Number(4);
+var infp=Infinity;
+var infm=-Infinity;
+var nan=NaN;
+
 
 console.log("age=" + age + "," + typeof(age));
 console.log("name=" + name + "," + typeof(name));
@@ -40,6 +45,7 @@ console.log("x=" + x + "," + typeof(x));
 console.log("y=" + y + "," + typeof(y));
 console.log("(x>y)=" + xy + "," + typeof(xy));
 console.log("char=" + char + "," + typeof(char));
+console.log("symbol " + typeof(sym));
 console.log(str1+"\n"+str2+"\n"+str3);
 console.log(typeof(str1));
 console.log("cat=" + cat + "," + typeof(cat));
@@ -51,12 +57,17 @@ console.log("address=" + address + "," + typeof(address));
 console.log("dayOfWeek=" + dayOfWeek+ ","+ typeof(dayOfWeek));
 console.log("dayOfWeek[0]=" + dayOfWeek[0]+ ","+typeof(dayOfWeek[0]));
 console.log("null instance of Object? " + (null instanceof(Object)));
-console.log("null === undefined " + (null===undefined)); 
-console.log("null == undefined " + (null==undefined)); 
+console.log("null === undefined? " + (null===undefined)); 
+console.log("null == undefined? " + (null==undefined)); 
 console.log("date=" + date + "," + typeof(date));
 console.log(func + "," + typeof(func));
 console.log("numObj=" + numObj + "," + typeof(numObj));
 console.log("undefined variable- " + typeof(none));
+console.log("infinity="+ infp + "," + typeof(infp));
+console.log("-infinity="+ infm + "," + typeof(infm));
+console.log("NaN="+ nan + "," + typeof(nan));
+console.log("NaN istance of Number? "+(NaN instanceof(Number)));
+
 var a=5;
 var b=4;
 console.log("a=" + a + "," +typeof(a));
