@@ -1,5 +1,5 @@
-// // Problem 1. Odd or Even
-// // Write an expression that checks if given integer is odd or even.
+// // // Problem 1. Odd or Even
+// // // Write an expression that checks if given integer is odd or even.
 
 function oddOrEven(number1){
 	if(number1%2==0){
@@ -15,8 +15,8 @@ oddOrEven(-4);
 oddOrEven(0);
 
 
-// // Problem 2. Divisible by 7 and 5
-// // Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
+// // // Problem 2. Divisible by 7 and 5
+// // // Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
 
 
 function divisibleBy(number2) {
@@ -34,8 +34,8 @@ console.log(divisibleBy(140));
 console.log(divisibleBy(0));
 
 
-// // Problem 3. Rectangle area
-// // Write an expression that calculates rectangle’s area by given width and height.
+// // // Problem 3. Rectangle area
+// // // Write an expression that calculates rectangle’s area by given width and height.
 
 function area(width,height){
 	return width*height;
@@ -70,10 +70,10 @@ console.log(thirdDight(2724));
 console.log(thirdDight(10));
 console.log(thirdDight(222723));
 
-// Problem 5. Third bit
-// Write a boolean expression for finding if the bit #3 (counting from 0) of a given integer.
-// The bits are counted from right to left, starting from bit #0.
-// The result of the expression should be either 1 or 0.
+// // Problem 5. Third bit
+// // Write a boolean expression for finding if the bit #3 (counting from 0) of a given integer.
+// // The bits are counted from right to left, starting from bit #0.
+// // The result of the expression should be either 1 or 0.
 
 function thirdBit(number3){
        console.log( (number3 >> 3) & 1);
@@ -83,3 +83,66 @@ thirdBit(10);
 thirdBit(0);
 thirdBit(5343);
 
+// Problem 6. Point in Circle
+// Write an expression that checks if given point P(x, y) is within a circle K({0,0}, 5). //{0,0} is the centre and 5 is the radius
+//x^2+y^2>=r^2
+
+function pointInCircle(x,y) {
+	if(Math.pow(x,2)+Math.pow(y,2)<=25){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+console.log(pointInCircle(0,1));
+console.log(pointInCircle(-5,0));
+console.log(pointInCircle(-4,5));
+console.log(pointInCircle(0.9,-4.93));
+
+// Problem 7. Is prime
+// Write an expression that checks if given positive integer number n (n ≤ 100) is prime.
+
+function isPrime(number4){
+	var isPr=true;
+	for( var i=2; i<= Math.sqrt(number4);i++){
+		if(number4 % i == 0){
+			isPr=false;
+			break;
+		}
+		else{isPr=true;}
+	}
+	console.log(isPr)
+}
+
+isPrime(7);
+isPrime(-3);
+isPrime(4);
+
+// Problem 8. Trapezoid area
+// Write an expression that calculates trapezoid's area by given sides a and b and height h.
+function trapezoidArea(a,b,h){
+	return 0.5*(h*(a+b));
+}
+console.log(trapezoidArea(5,7,12));
+console.log(trapezoidArea(2,1,33));
+
+// Problem 9. Point in Circle and outside Rectangle
+// Write an expression that checks for given point P(x, y) if it is within the circle K( (1,1), 3)
+// and out of the rectangle R(top=1, left=-1, width=6, height=2).
+
+function pointIn(x,y){
+	var isInCirle=Math.pow(x-1,2)+Math.pow(y-1,2)<=9;
+	var isOutRectangle=x>1 && x<=5 && y>-1 && y>-1;
+
+	if( isInCirle==true && isOutRectangle==false ){
+		console.log("yes");
+	}
+	else{
+		console.log("no");
+	}
+}
+
+pointIn(1,4);
+pointIn(2,0);
