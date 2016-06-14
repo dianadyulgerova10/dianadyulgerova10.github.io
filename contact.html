@@ -1,131 +1,135 @@
 <!DOCTYPE html>
 <html>
-   <head>
+
+<head>
     <meta name="description" content="Online store">
     <meta name="keywords" content="clothes,store,skirts,tops,shoes,skirt,top">
     <meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-	<link href='https://fonts.googleapis.com/css?family=Italiana|Cinzel' rel='stylesheet' type='text/css'>
-    <script  src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<meta charset="UTF-8">
-    <link rel="icon"  href="favicon.ico"  type="image/x-icon" sizes="16x16">
+    <link href='https://fonts.googleapis.com/css?family=Italiana|Cinzel' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
     <title>Online Store</title>
-   </head>
-   <body>
-      <header>
-         <a href="index.html"><img src="images/logo.png" id="logo" alt="Logo image">
-         <h1>ONLINE STORE</h1></a>
-         
-      </header>
-            <!-- Navigation -->
-      <nav>
-	  <ul id="navigation">
-	  <li id="left_nav">
-	  <a href="#menu" class="menu-link">
-	  <img id="hamburger" src="images/hamburger.png"></a>
-	  </li>
-					<div id="menu" role="navigation">
-         <ul id="navigation_bar">
-            <li>
-               <ul id="nav_store">
-                  <li><a href="products.html" >PRODUCTS </a> 
-						<ul>
-							<li><a href="tops.html"> TOPS </a></li>
-							<li><a href="skirts.html"> SKIRTS </a></li>	
-							<li><a href="shoes.html">SHOES</a></li>
-						</ul>
-				  </li>
-					<li><a href="new_in.html">NEW IN</a></li>
-					<li><a href="on_sale.html">ON SALE</a></li>
-					<li><a href="details.html" > ABOUT US</a> </li> 
-					<li><a href="contact.html"> CONTACT US</a></li> 
-					<li><a href="gift_card.html">GIFT CARD</a></li>
-				</ul>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" id="logo" alt="Logo image">
+            <h1>ONLINE STORE</h1></a>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul id="navigation">
+            <li id="left_nav">
+                <a href="#menu" class="menu-link">
+                    <img id="hamburger" src="images/hamburger.png"></a>
             </li>
-            <li>
-               <ul id="nav_log">
-                  <li><a href="login.html">Login</a></li>     
-                  <li><a href="registration.html">Register</a></li> 
-               </ul>
-			  
+            <div id="menu" role="navigation">
+                <ul id="navigation_bar">
+                    <li>
+                        <ul id="nav_store">
+                            <li><a href="products.html">PRODUCTS </a>
+                                <ul>
+                                    <li><a href="tops.html"> TOPS </a></li>
+                                    <li><a href="skirts.html"> SKIRTS </a></li>
+                                    <li><a href="shoes.html">SHOES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="new_in.html">NEW IN</a></li>
+                            <li><a href="on_sale.html">ON SALE</a></li>
+                            <li><a href="details.html"> ABOUT US</a> </li>
+                            <li><a href="contact.html"> CONTACT US</a></li>
+                            <li><a href="gift_card.html">GIFT CARD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="nav_log">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="registration.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <li id="right_nav">
+                <a id="search_link"><img id="search" src="images/search.png"></a>
+                <div id="nav_search">
+                    <form id="search" method="get" action="http://www.google.com">
+                        <input type="text" id="search_input" name="q" size="10" maxlength="120">
+                        <input type="submit" value="search" id="search_button">
+                    </form>
+                </div>
+                <a id="nav_login" href="login.html">
+                    <img id="nav_login_img" src="images/login.png"></a>
             </li>
-         </ul>
-       </div>
-	  <li id="right_nav"> <a  id="search_link"><img id="search" src="images/search.png"></a>
-					<div id="nav_search">
-				<form id="search" method="get" action="http://www.google.com">
-						<input type="text" id="search_input" name="q" size="10" maxlength="120">
-						<input type="submit" value="search" id="search_button">
-						</form>
-				</div> 
-			<a id="nav_login" href="login.html">
-				<img  id="nav_login_img" src="images/login.png"></a>
-				</li></ul>
-      </nav>
-      <!-- End Navigation -->
-	  
-   <!-- Index_content -->
-   <div id="contact_content" >
-      <!-- Aside bar -->
-      <aside>
-         <!-- <ul class="side_bar">
+        </ul>
+    </nav>
+    <!-- End Navigation -->
+    <!-- Index_content -->
+    <div id="contact_content">
+        <!-- Aside bar -->
+        <aside>
+            <!-- <ul class="side_bar">
             <li><a href="new_in.html">NEW IN</a></li>
             <li><a href="on_sale.html">ON SALE</a></li>
             <li><a href="gift_card.html">GIFT CARD</a></li>
          </ul> -->
-      </aside>
-      <!--End Aside bar -->
-      <section id="main">
-        
-         <!-- SEND A MESSAGE form-->
-		 <div id="contacts">
-		 <section id="contact_img"><img src="images/Contact-us.png"></section>
-         <section class="contact_us">
-            <form>
-               <h2>SEND A MESSAGE</h2>
-               
-               Name:<br>
-               <input type="text" placeholder=""  name="lastname" size="25"><br>
-               * Email:<br >
-               <input type="email" name="email"  value="" size="25" required ><br> 
-               Your message:<br >
-               <textarea id="message"  name="message" rows="7" cols="28"></textarea>
-               <br>
-               <input  type="submit" value="Send email" >
-            </form>
-         </section>
-         <!--  END SEND A MESSAGE-FOrm-->
-		 <section><img class="contact_us_img" src="images/contact_us.png"></section>
-         <!-- ADDRESS -->
-         <section class="contact_us">
-            <h3>POST ADDRESS</h3>
-            <address>
-               
-               DieSachbearbeiter<br> 
-               10435 Berlin<br>
-               Germany<br>
-               Telephone: +49 30 47373795<br>
-               Schonhauser Allee 167c
-            </address>
-         </section>
-		 
-		 </div>
-      </section>
-   </div>
-   <!-- END ADDRESS -->
-   	
-	  <!-- footer -->
-      <footer>
-         <ul class="social_links">
-		<li><a class="facebook" href="#"></a></li>
-		<li><a class="twitter" href="#"></a></li>
-		<li><a class="google" href="#"></a></li>
+        </aside>
+        <!--End Aside bar -->
+        <section id="main">
+            <!-- SEND A MESSAGE form-->
+            <div id="contacts">
+                <section id="contact_img"><img src="images/Contact-us.png"></section>
+                <section class="contact_us">
+                    <form>
+                        <h2>SEND A MESSAGE</h2> Name:
+                        <br>
+                        <input type="text" placeholder="" name="lastname" size="25">
+                        <br> * Email:
+                        <br>
+                        <input type="email" name="email" value="" size="25" required>
+                        <br> Your message:
+                        <br>
+                        <textarea id="message" name="message" rows="7" cols="28"></textarea>
+                        <br>
+                        <input type="submit" value="Send email">
+                    </form>
+                </section>
+                <!--  END SEND A MESSAGE-FOrm-->
+                <section><img class="contact_us_img" src="images/contact_us.png"></section>
+                <!-- ADDRESS -->
+                <section class="contact_us">
+                    <h3>POST ADDRESS</h3>
+                    <address>
+                        DieSachbearbeiter
+                        <br> 10435 Berlin
+                        <br> Germany
+                        <br> Telephone: +49 30 47373795
+                        <br> Schonhauser Allee 167c
+                    </address>
+                </section>
+            </div>
+        </section>
+    </div>
+    <!-- END ADDRESS -->
+    <!-- footer -->
+    <footer>
+        <ul class="social_links">
+            <li>
+                <a class="facebook" href="#"></a>
+            </li>
+            <li>
+                <a class="twitter" href="#"></a>
+            </li>
+            <li>
+                <a class="google" href="#"></a>
+            </li>
         </ul>
         <small>All right reserved &copy 2016</small>
-      </footer>
-	  <!-- end footer -->
-	  
+    </footer>
+    <!-- end footer -->
 </body>
+
 </html>
