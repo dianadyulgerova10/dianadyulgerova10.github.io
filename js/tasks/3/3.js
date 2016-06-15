@@ -198,33 +198,33 @@ biggestOfFive(11,5,16,52,3);
 console.log("Problem 8");
 
 function getWords(number){
-var hundred = parseInt(number / 100);
-var tenth = parseInt((number / 10) % 10);
-var unit = parseInt(number % 10);
-var result;
-var tens = ['', '', ' twenty', ' thirty', ' forty', ' fifty', ' sixty', ' seventy', ' eighty', ' ninety'];
-var ones = ['', ' one', ' two', ' three', ' four', ' five', ' six', ' seven', ' eight', ' nine', ' ten', 
- ' eleven', ' twelve', ' thirteen', ' fourteen', ' fifteen', ' sixteen', ' seventeen', ' eighteen', ' nineteen'];
+	var hundred = parseInt(number / 100);
+	var tenth = parseInt((number / 10) % 10);
+	var unit = parseInt(number % 10);
+	var result;
+	var tens = ['', '', ' twenty', ' thirty', ' forty', ' fifty', ' sixty', ' seventy', ' eighty', ' ninety'];
+	var ones = ['', ' one', ' two', ' three', ' four', ' five', ' six', ' seven', ' eight', ' nine', ' ten', 
+	 ' eleven', ' twelve', ' thirteen', ' fourteen', ' fifteen', ' sixteen', ' seventeen', ' eighteen', ' nineteen'];
 
-if(number==0){
-	return console.log("zero");
+	if(number==0){
+		return console.log("zero");
+		}
+	else if (number>0 && number<20) {
+		result=ones[number];
+     	}
+	else if(number>=20 && number<100){
+		result=tens[tenth]+ones[unit];
 	}
-else if (number>0 && number<20) {
-	result=ones[number];
-     }
-else if(number>=20 && number<100){
-	result=tens[tenth]+ones[unit];
-}
-else if(number>=100 && tenth==0 && unit==0){
- 	result=ones[hundred]+ " hundreds ";
- }
-else if(number>=100 && tenth==0 && unit!=0){
- 	result=(ones[hundred]+ " hundreds and"+ ones[unit]);
- }
-else if(number>=100 && tenth!=0){
- 	result=	ones[hundred]+ " hundreds and" + tens[tenth] + ones[unit];
- }
-  console.log(result);
+	else if(number>=100 && tenth==0 && unit==0){
+ 		result=ones[hundred]+ " hundreds ";
+ 	}
+	else if(number>=100 && tenth==0 && unit!=0){
+ 		result=(ones[hundred]+ " hundreds and"+ ones[unit]);
+ 	}
+	else if(number>=100 && tenth!=0){
+ 		result=	ones[hundred]+ " hundreds and" + tens[tenth] + ones[unit];
+ 	}
+  	console.log(result);
 }
 
 getWords(733);
