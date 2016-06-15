@@ -1,9 +1,9 @@
 // Problem 1. Exchange if greater
 // Write an if statement that takes two double variables a and b and exchanges their values if the first one is greater than the second.
 // As a result print the values a and b, separated by a space.
+console.log("Problem 1");
 
 function ifGreater(a,b){
-
 	if(b<a){
 		var c=a;
 		a=b;
@@ -20,6 +20,7 @@ ifGreater(3,14);
 // Problem 2. Multiplication Sign
 // Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating it.
 // Use a sequence of if operators.
+console.log("Problem 2");
 
 function getSign(a,b,c){
 	if(a==0 || b==0 || c==0){
@@ -40,6 +41,7 @@ getSign(-5,6,-7);
 // Problem 3. The biggest of Three
 // Write a script that finds the biggest of three numbers.
 // Use nested if statements.
+console.log("Problem 3");
 
 function biggestNumber(a,b,c){
 	 var bigNumber;
@@ -70,6 +72,7 @@ function biggestNumber(a,b,c){
 		}
 	}
 }
+
 biggestNumber(5,8,10);
 biggestNumber(100,54,6);
 biggestNumber(7,15,4);
@@ -78,9 +81,9 @@ biggestNumber(7,15,4);
 // Sort 3 real values in descending order.
 // Use nested if statements.
 // Note: Don’t use arrays and the built-in sorting functionality.
+console.log("Problem 4");
 
 function sortNumbers(a,b,c){
-
 	if(a>b && a>c){
 		if(b>c){
 			console.log(a + " " + b + " " + c);
@@ -109,6 +112,7 @@ sortNumbers(4,12,1);
 // Write a script that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English).
 // Print “not a digit” in case of invalid input.
 // Use a switch statement.
+console.log("Problem 5");
 
 function getWord(number){
 	switch(number){
@@ -145,6 +149,7 @@ getWord(5);
 // Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots).
 // Calculates and prints its real roots.
 // Note: Quadratic equations may have 0, 1 or 2 real roots.
+console.log("Problem 6");
 
 function quadraticEquation(a,b,c){
 	var d = (Math.pow(b,2) - 4*a*c);
@@ -152,12 +157,10 @@ function quadraticEquation(a,b,c){
 	var x2;
 	if(d<0){
 		console.log("no real roots");
-
 	}
 	else if( d == 0 ){
 		x1=(-b)/2*a;
 		console.log("x1=x2=" + x1);
-
 	}
 	else{
 		x1=((-b) + Math.sqrt(d,2))/(2*a);
@@ -169,18 +172,19 @@ function quadraticEquation(a,b,c){
 quadraticEquation(2,5,-3);
 quadraticEquation(5,1,8);
 quadraticEquation(-5,3,2);
+quadraticEquation(-1,3,0);
 
 // Problem 7. The biggest of five numbers
 // Write a script that finds the greatest of given 5 variables.
 // Use nested if statements.
+console.log("Problem 7");
 
 function  biggestOfFive(a,b,c,d,e){
 	var arr=[a,b,c,d,e];
 	var biggest=arr[0];	    
 	for (i = 1; i < arr.length; i++) {
 		 if (biggest < arr[i]) {
-			    biggest = arr[i];
-			   
+			    biggest = arr[i];		   
 		}	
 	}console.log(biggest);
 	 
@@ -191,13 +195,14 @@ biggestOfFive(11,5,16,52,3);
 
 // Problem 8. Number as words
 // Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation.
+console.log("Problem 8");
+
 function getWords(number){
 var hundred = parseInt(number / 100);
 var tenth = parseInt((number / 10) % 10);
 var unit = parseInt(number % 10);
 var result;
 var tens = ['', '', ' twenty', ' thirty', ' forty', ' fifty', ' sixty', ' seventy', ' eighty', ' ninety'];
- // var hundreds = ' hundred';
 var ones = ['', ' one', ' two', ' three', ' four', ' five', ' six', ' seven', ' eight', ' nine', ' ten', 
  ' eleven', ' twelve', ' thirteen', ' fourteen', ' fifteen', ' sixteen', ' seventeen', ' eighteen', ' nineteen'];
 
@@ -214,7 +219,6 @@ else if(number>=100 && tenth==0 && unit==0){
  	result=ones[hundred]+ " hundreds ";
  }
 else if(number>=100 && tenth==0 && unit!=0){
- 	
  	result=(ones[hundred]+ " hundreds and"+ ones[unit]);
  }
 else if(number>=100 && tenth!=0){
