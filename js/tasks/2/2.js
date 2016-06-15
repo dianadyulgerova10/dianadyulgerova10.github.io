@@ -143,7 +143,7 @@ console.log("Problem 9");
 
 function pointIn(x,y){
 	var isInCirle=Math.pow(x-1,2)+Math.pow(y-1,2)<=9;
-	var isOutRectangle=x>1 && x<=5 && y>-1 && y>-1;
+	var isOutRectangle=x>=-1 && x<=5 && y>=-1 && y<=1;
 
 	if( isInCirle==true && isOutRectangle==false ){
 		console.log("yes");
