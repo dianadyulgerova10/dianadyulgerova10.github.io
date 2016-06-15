@@ -111,16 +111,21 @@ console.log("Problem 7");
 
 function isPrime(number4){
 	var isPr=true;
-	for( var i=2; i<= Math.sqrt(number4);i++){
-		if(number4 % i == 0){
-			isPr=false;
-			break;
+	if(number4==1){
+		isPr=false;
+	}
+	else{
+		for( var i=2; i<= Math.sqrt(number4);i++){
+			if(number4 % i == 0){
+				isPr=false;
+				break;
+			}
+			else{isPr=true;}
 		}
-		else{isPr=true;}
 	}
 	console.log(isPr)
 }
-
+isPrime(1);
 isPrime(7);
 isPrime(-3);
 isPrime(4);
