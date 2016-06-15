@@ -25,7 +25,7 @@ function getSign(a,b,c){
 	if(a==0 || b==0 || c==0){
 		return console.log("0");
 	}
-	else if((a<0 && b>0 && c>0) || (a>0 && b>0 && c>0) || (a>0 && b>0 && c<0)){
+	else if((a<0 && b>0 && c>0) || (a>0 && b<0 && c>0) || (a>0 && b>0 && c<0) || (a<0 && b<0 && c<0)){
 		return console.log("-");
 	}
 	else{
@@ -144,3 +144,53 @@ getWord(1);
 getWord(10);
 getWord(5);
 
+// Problem 6. Quadratic equation
+// Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots).
+// Calculates and prints its real roots.
+// Note: Quadratic equations may have 0, 1 or 2 real roots.
+
+function quadraticEquation(a,b,c){
+	var d = (Math.pow(b,2) - 4*a*c);
+	var x1;
+	var x2;
+	if(d<0){
+		console.log("no real roots");
+
+	}
+	else if( d == 0 ){
+		x1=(-b)/2*a;
+		console.log("x1=x2=" + x1);
+
+	}
+	else{
+		x1=((-b) + Math.sqrt(d,2))/(2*a);
+		x2=((-b) - Math.sqrt(d,2))/(2*a);
+		console.log("x1=" + x1 + "; x2=" + x2);
+	}
+}
+
+quadraticEquation(2,5,-3);
+quadraticEquation(5,1,8);
+quadraticEquation(-5,3,2);
+
+// Problem 7. The biggest of five numbers
+// Write a script that finds the greatest of given 5 variables.
+// Use nested if statements.
+
+function  biggestOfFive(a,b,c,d,e){
+	var arr=[a,b,c,d,e];
+	var biggest=arr[0];	    
+	for (i = 1; i < arr.length; i++) {
+		 if (biggest < arr[i]) {
+			    biggest = arr[i];
+			   
+		}	
+	}console.log(biggest);
+	 
+}
+
+biggestOfFive(1,5,6,2,3);
+biggestOfFive(11,5,16,52,3);
+
+// Problem 8. Number as words
+// Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation.
