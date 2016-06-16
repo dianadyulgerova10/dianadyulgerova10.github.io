@@ -208,14 +208,17 @@ function getWords(number){
 
 	if(number==0){
 		return console.log("zero");
-		}
+	}
 	else if (number>0 && number<20) {
 		result=ones[number];
-     	}
+     }
 	else if(number>=20 && number<100){
 		result=tens[tenth]+ones[unit];
 	}
-	else if(number>=100 && tenth==0 && unit==0){
+	else if(number==100){
+		return console.log("hundred");
+	}
+	else if(number>100 && tenth==0 && unit==0){
  		result=ones[hundred]+ " hundreds ";
  	}
 	else if(number>=100 && tenth==0 && unit!=0){
@@ -231,3 +234,4 @@ getWords(733);
 getWords(27);
 getWords(999);
 getWords(409);
+getWords(100);
