@@ -71,6 +71,45 @@ else{
 console.log("Problem 4");
 
 
+var arr=[3,1, 2, 3, 4,5,6,7,8,9, 2, 2,1,2,3,4,5,4],
+	cnt,
+	bigCnt=0,
+	number,
+	i,
+	len,
+	start=Number.MAX_VALUE;
+	
+for(i=0, len=arr.length; i<len ; i += 1){
+	if(arr[i]+1==arr[i+1]){
+		cnt+=1;
+		if(bigCnt<cnt){
+			bigCnt=cnt;
+			number=arr[i];
+			if(start>number){
+				start=number;
+			}		
+		}
+	}
+	else{
+		cnt=0;
+	}
+}
+
+if(bigCnt==0){
+	console.log("no sequence");
+}
+else{
+	var sequence=[];
+	var a=0;
+	for(i=start; a<bigCnt+1; i++){
+		sequence[a]=i;
+		a++;
+
+	}
+	console.log(sequence);
+}
+
+
 // Problem 5. Selection sort
 // Sorting an array means to arrange its elements in increasing order.
 // Write a script to sort an array.
@@ -151,7 +190,7 @@ var arr=[ 1, 3, 3, 4, 5, 5, 6, 6, 7 ],
 	len=arr.length-1,
 	a,
 	index,
-	number=3;
+	number=4;
 
 
 do{
