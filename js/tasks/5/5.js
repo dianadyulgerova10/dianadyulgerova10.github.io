@@ -151,7 +151,6 @@ var arr=[5,67,3,23,6,3,1,6,3],
 	smallest,
 	bigCnt=0,
 	number=0;
-
 for(i=0,len=sortArr.length; i<len; i++){
 	index=i;
 	for(j=i+1, len=sortArr.length; j<len; j++){
@@ -176,6 +175,7 @@ for (i=0,len=sortArr.length; i<len; i++) {
 		cnt=0;
 	}
 }
+console.log(arr);
 console.log(number + "("+ (bigCnt+1) + " times)");
 
 // Problem 7. Binary search
