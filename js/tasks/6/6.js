@@ -76,7 +76,67 @@ console.log(occurresncesOfWord("and",true));
 console.log("Problem 4");
 
 function countDiv(){
-	  return console.log(document.querySelectorAll('div').length)
+	  return console.log(document.querySelectorAll('div').length);
 }
-countDiv();
+//countDiv();
 
+// Problem 5. Appearance count
+// Write a function that counts how many times given number appears in given array.
+// Write a test function to check if the function is working correctly.
+console.log("Problem 5");
+
+function countNumbers(number, arr){
+	number= number || Number();
+	arr= arr || [];
+	var cnt=0;
+
+	for(var i=0; i<=arr.length;i++){		
+		if(arr[i]==number){
+			cnt++;
+		}		
+	}
+	console.log(cnt);
+}
+
+countNumbers(5,[1,2,3,5,6,7,4,5,5,5]);
+
+// Problem 6. Larger than neighbours
+// Write a function that checks if the element at given position in given array of integers is bigger than its two neighbours (when such exist).
+console.log("Problem 6");
+
+function isBigger(index,arr){
+		index= index || Number();
+		arr=arr || [];
+
+		if(index==0 || index>=arr.length){
+			console.log("No neighbours")
+		}
+		else{
+			if(arr[index]>arr[index+1]+arr[index-1]){
+				console.log("Bigger");
+			}
+			else{
+				console.log("Not bigger")
+			}
+		}
+}
+
+isBigger(3,[4,5,6,17,8,3,23,5,2,5]);
+
+// Problem 7. First larger than neighbours
+// Write a function that returns the index of the first element in array that is larger than its neighbours or -1, if there’s no such element.
+// Use the function from the previous exercise.
+console.log("Problem 7");
+
+function firstBigger(arr){
+	arr= arr || [];
+
+	for(var i=1; i<=arr.length-1; i++){
+		if(arr[i]>arr[i+1]+arr[i-1]){
+			break;
+		}
+	}
+	return i;
+}
+
+console.log(firstBigger([3,4,54,6,7,5]));
