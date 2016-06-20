@@ -79,7 +79,7 @@ console.log("Problem 4");
 function countDiv(){
 	  return console.log(document.querySelectorAll('div').length);
 }
-//countDiv();
+countDiv();
 
 // Problem 5. Appearance count
 // Write a function that counts how many times given number appears in given array.
