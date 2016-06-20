@@ -114,7 +114,7 @@ function isBigger(index,arr){
 			console.log("No neighbours")
 		}
 		else{
-			if(arr[index]>arr[index+1]+arr[index-1]){
+			if(arr[index]>arr[index+1] && arr[index]>arr[index-1]){
 				console.log("Bigger");
 			}
 			else{
@@ -136,7 +136,7 @@ function firstBigger(arr){
 	arr= arr || [];
 
 	for(var i=1; i<=arr.length-1; i++){
-		if(arr[i]>arr[i+1]+arr[i-1]){
+		if(arr[i]>arr[i+1] && arr[i]>arr[i-1]){
 			break;
 		}
 	}
