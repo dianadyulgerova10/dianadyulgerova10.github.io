@@ -34,6 +34,7 @@ function lastDigit(number){
 }
 
 lastDigit(1233);
+lastDigit(45399);
 
 // Problem 2. Reverse number
 // Write a function that reverses the digits of given decimal number.
@@ -99,6 +100,7 @@ function countNumbers(number, arr){
 }
 
 countNumbers(5,[1,2,3,5,6,7,4,5,5,5]);
+countNumbers(1,[1,2,343,5,6,27,1,2,1,4,5,51,5]);
 
 // Problem 6. Larger than neighbours
 // Write a function that checks if the element at given position in given array of integers is bigger than its two neighbours (when such exist).
@@ -122,6 +124,8 @@ function isBigger(index,arr){
 }
 
 isBigger(3,[4,5,6,17,8,3,23,5,2,5]);
+isBigger(3,[4,5,6,1,8,3,2,5,2,5]);
+isBigger(0,[4,5,6,17,8,3,23,5,2,5]);
 
 // Problem 7. First larger than neighbours
 // Write a function that returns the index of the first element in array that is larger than its neighbours or -1, if there’s no such element.
@@ -136,7 +140,13 @@ function firstBigger(arr){
 			break;
 		}
 	}
-	return i;
+	if(i>arr.length-1){
+		return -1;
+	}
+	else{
+		return i;
+	}
 }
 
-console.log(firstBigger([3,4,54,6,7,5]));
+console.log(firstBigger([3,4,4,7,7,5]));
+console.log(firstBigger([3,4,44,7,7,5]));
