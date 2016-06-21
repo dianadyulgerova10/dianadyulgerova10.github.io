@@ -132,7 +132,114 @@ function clone(element){
 // Write a function that checks if a given object contains a given property.
 console.log("Problem 4");
 
+var obj1={ a:1 , b:7 , c:3};
+
+function hasProperty(prop,obj){
+	for(var i in obj){
+		if (i==prop) {
+         	return true;
+          	break;
+        }
+	}
+	return false;
+}
+
+console.log(hasProperty("a",obj1));
+console.log(hasProperty("aa",obj1));
+
+// Problem 5. Youngest person
+// Write a function that finds the youngest person in a given array of people and prints his/hers full name
+// Each person has properties firstname, lastname and age.
+console.log("Problem 5");
+
+function Person(firstName, lastName, age){
+	this.firstName=firstName;
+	this.lastName=lastName;
+	this.age=age;
+	this.fullName=function fullName(){
+		return firstName +" " + lastName;
+	};
+}
+
+var ivan=new Person("Ivan","Ivanov",10);
+var petar=new Person("Petar","Petrov",30);
+var maria=new Person("Maria","Dimitrova",15);
+var petya=new Person("Petya","Nikolova",50);
+
+var people=[ivan,petar,maria,petya];
+findYoungnest(people);
+
+function findYoungnest(arr){
+	//console.log(1);
+	//var ages=[];
+	var index=Number();
+	var age=arr[0].age;
+	for(var i=0;i<arr.length;i++){
+		if(age>arr[i].age){
+			age=arr[i].age;
+			index=i;
+		}
+	}
+	return console.log(age + " " + arr[index].fullName());
+}
+
+// Problem 6.
+// Write a function that groups an array of people by age, first or last name.
+// The function must return an associative array, with keys - the groups, and values - arrays with people in this groups
+// Use function overloading (i.e. just one function)
+console.log("Problem 6");
+
+function Person2(age,firstName,lastName){
+	this.age=age;
+	this.firstName=firstName;
+	this.lastName=lastName;
+	this.toString=function(){
+		return firstName + " " + lastName + ", " + age;
+	}
+}
+
+var ivan=new Person2(12,"Ivan","Ivanov");
+var petar=new Person2(30,"Petar","Petrov");
+var maria=new Person2(15,"Maria","Dimitrova");
+var petya=new Person2(50,"Petya","Nikolova");
+
+var peopleArr=new Array();
+peopleArr.push(ivan);
+peopleArr.push(petar);
+peopleArr.push(maria);
+peopleArr.push(petya);
+
+function group(people, property) {
+    if (!people[0].hasOwnProperty(property)) {
+           console.log("no such property!");
+    }
+    groups = {};
+    people.map(function (current) {
+    	if (!groups[current[property]]) {
+    		groups[current[property]] = new Array();
+   	 }
+   		groups[current[property]].push(current);
+    });
+    
+    return groups;
+}
 
 
+var groupedByFirstName = group(peopleArr, "firstName");
+var groupedByLastName = group(peopleArr, "lastName");
+var groupedByAge = group(peopleArr, "age");
+        
+function printGrouped(people) {
+    for (var person in people) {
+        console.log(people[person]);
+   }
+}
 
-
+console.log("Grouped by first name:");
+printGrouped(groupedByFirstName);
+console.log();
+console.log("Grouped by last name:");
+printGrouped(groupedByLastName);
+console.log();
+console.log("Grouped by age");
+printGrouped(groupedByAge);
