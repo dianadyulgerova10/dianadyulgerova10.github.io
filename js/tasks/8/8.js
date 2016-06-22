@@ -131,17 +131,18 @@ console.log(findYoungest(personArr(10)));
 // Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object
 // Use Array#reduce
 // Use only array methods and no regular loops (for, while)
-console.log("Problem 6");
+// console.log("Problem 6");
 
-function groupPeople(arr){
+// function groupPeople(arr){
 
-	var arr2=arr.map(function(item){
-		var arr3=[];
-		if(item["firstName"].charAt(0)){}
-	})
+// 	var arr2=arr.map(function(item){
+// 		var arr3=[];
+// 		if(item["firstName"].charAt(0)){}
+// 	})
 
 
-}
+// }
 
-var arrr=personArr(5);
-console.log(arrr[0]["firstName"].charAt(0))
+// var arrr=personArr(5);
+// console.log(arrr[0]["firstName"].charAt(0))
+//
