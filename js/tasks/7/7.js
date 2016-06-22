@@ -213,7 +213,7 @@ function group(people, property) {
     if (!people[0].hasOwnProperty(property)) {
            console.log("no such property!");
     }
-    groups = {};
+    var groups = {};
     people.map(function (current) {
     	if (!groups[current[property]]) {
     		groups[current[property]] = new Array();
@@ -223,7 +223,6 @@ function group(people, property) {
     
     return groups;
 }
-
 
 var groupedByFirstName = group(peopleArr, "firstName");
 var groupedByLastName = group(peopleArr, "lastName");
