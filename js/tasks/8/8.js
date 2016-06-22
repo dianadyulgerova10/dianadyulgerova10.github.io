@@ -38,7 +38,7 @@ function generatePeople(){
 	return n;
 }
 
-function personArr(len){
+function people(len){
 	var arr=[];
 	for(var i=0; i<len; i++){
 		arr.push(generatePeople());
@@ -46,7 +46,7 @@ function personArr(len){
 	return arr;
 }
 
-console.log(personArr(10));
+console.log(people(10));
 
 
 // }
@@ -68,7 +68,7 @@ function checkAge(arr){
 		return false;
 }
 
-console.log(checkAge(personArr(10)));
+console.log(checkAge(people(10)));
 
 // Problem 3. Underage people
 // Write a function that prints all underaged persons of an array of person
@@ -86,7 +86,7 @@ function underage(arr){
  					});
 }
 
-//underage(personArr(10));
+underage(people(10));
 
 // Problem 4. Average age of females
 // Write a function that calculates the average age of all females, extracted from an array of persons
@@ -106,7 +106,7 @@ console.log("Problem 4");
 	return sum/cnt;
 
  }
- console.log(averageAge(personArr(10)));
+ console.log(averageAge(people(10)));
 
 // Problem 5. Youngest person
 // Write a function that finds the youngest male person in a given array of people and prints his full name
@@ -125,24 +125,25 @@ function findYoungest(arr){
 
 }
 
-console.log(findYoungest(personArr(10)));
+console.log(findYoungest(people(10)));
 
 // Problem 6. Group people
 // Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object
 // Use Array#reduce
 // Use only array methods and no regular loops (for, while)
-// console.log("Problem 6");
+console.log("Problem 6");
 
-// function groupPeople(arr){
+function groupPeople(arr){
+	var group={};
+	var arr2=arr.map(function(item){	
+		if(!(group[item.firstName[0]])){
+			group[item.firstName[0]]=new Array();
+		}
+		group[item.firstName[0]].push(item);				
+	});
+	return group;
+}
 
-// 	var arr2=arr.map(function(item){
-// 		var arr3=[];
-// 		if(item["firstName"].charAt(0)){}
-// 	})
+ console.log(groupPeople(people(10)));
 
 
-// }
-
-// var arrr=personArr(5);
-// console.log(arrr[0]["firstName"].charAt(0))
-//
