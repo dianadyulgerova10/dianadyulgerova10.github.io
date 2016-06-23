@@ -58,7 +58,7 @@ console.log(people(10));
 console.log("Problem 2");
 
 function checkAge(arr){
-	var arr2 = arr.filter(function(item, arr){
+	var arr2 = arr.filter(function(item){
  						return item["age"]>=18;
  					}
  						)

@@ -203,6 +203,7 @@ var petar=new Person2(30,"Petar","Petrov");
 var maria=new Person2(15,"Maria","Dimitrova");
 var petya=new Person2(50,"Petya","Nikolova");
 
+
 var peopleArr=new Array();
 peopleArr.push(ivan);
 peopleArr.push(petar);
