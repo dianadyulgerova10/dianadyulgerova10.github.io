@@ -172,5 +172,127 @@ function replaceTags(str){
 
 console.log(replaceTags(text));
 
+// Problem 9. Extract e-mails
+// Write a function for extracting all email addresses from given text.
+// All sub-strings that match the format @… should be recognized as emails.
+// Return the emails as array of strings.
+console.log("Problem 9");
+
+var text="Lorem ipsum dolor sit amet, abv@abv.bg vim eu melius bonorum inciderint. Cu audire accusam reformidans google@gmail.com pro, nemore antiopam aliquando ex est. ";
+
+function getEmail(str){
+	var regex=/\w+@\w+\.\w+\.?\w+/gi;
+	return str.match(regex);	
+}
+
+console.log(getEmail(text));
+
+// Problem 10. Find palindromes
+// Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".
+
+console.log("Problem 10");
+
+var text="Lorem ipsum dolor exe sit amet fif b,vim eu ffytyff abba melius bonorum lamal inciderint."
+
+function findPalindromes(str){
+	var arr=str.split(' ');
+	var palindromes=[];
+	//return arr;
+	for(var i=0; i<arr.length;i++){
+		if(arr[i]===reverseString(arr[i])){
+			palindromes.push(arr[i]);
+		}
+	}
+	return palindromes;
+}
+
+console.log(findPalindromes(text));
+
+// Problem 11. String format
+// Write a function that formats a string using placeholders.
+// The function should work with up to 30 placeholders and all types.
+console.log("Problem 11");
+
+function stringFormat(){
+	var args=arguments;
+	var string=args[0];
+	var placeHolder;
+	for(var i=1;i<args.length;i++){
+	 	placeHolder='{' + (i-1) + '}';
+		while(string.indexOf(placeHolder)!=-1){
+			string=string.replace(placeHolder,args[i]);
+		}
+	}	
+	return string;
+}
+
+var str=stringFormat('Hello {0}!', 'Peter');
+console.log(str);
+
+// Problem 12. Generate list
+// Write a function that creates a HTML <ul> using a template for every HTML <li>.
+// The source of the list should be an array of elements.
+// Replace all placeholders marked with –{…}– with the value of the corresponding property of the object.
+console.log("Problem 12");
+function Person(firstName, lastName, age, gender){
+	this.firstName=firstName;
+	this.lastName=lastName;
+	this.age=age;
+	this.gender=gender;
+	this.fullName=function(){return this.firstName + " " +this.lastName;};
+	//console.log(firstName + " " + lastName+ " " + age + " " + gender);
+}
+function generatePeople(){
+	var mFirstNames=["Ivan", "Petar" , "Dimitar"];
+	var mLastNames=["Ivanov", "Petrov", "Dimitrov"];
+	var fFirstNames=["Mariya", "Petya", "Simona"];	
+	var fLastNames=["Ivanova", "Petrova", "Dimitrova"];
+	var age=Math.random()*100 |0;
+	var gender=!(Math.random()*2|0);
+	var rnd=Math.random() * 3 |0 ;
+	var rnd2=Math.random() *3| 0;
+
+	function genarate(gen){
+		if(gender===false){
+		 var randomMale=new Person(mFirstNames[rnd], mLastNames[rnd2], age, "male");
+		return randomMale;
+		}	
+		var randomFemale=new Person(fFirstNames[rnd], fLastNames[rnd2], age, "female");
+		return randomFemale;
+	}
+
+	var n=genarate(gender);
+	return n;
+}
+
+function People(len){
+	var arr=[];
+	for(var i=0; i<len; i++){
+		arr.push(generatePeople());
+		}
+	return arr;
+}
+
+
+function generateList(people, template) {
+   var result = '<ul style="list-style-type: none">'
+    people.forEach(function(person) {
+         result += '<li>'
+       result += template.replace(/-\{(.*?)\}-/g, function(placeHolder, i) {
+            return person[i]
+         })
+           result += '</li>'
+     })
+       result += '</ul>'
+        return result
+    }
+
+var people = new People(5);
+var	template = document.getElementById('list-item');
+template.outerHTML = generateList(people, template.innerHTML);
+
+
+
+
 
 
