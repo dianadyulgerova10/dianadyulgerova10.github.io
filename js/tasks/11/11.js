@@ -18,25 +18,18 @@ var element=document.getElementById('change');
 var arr=[1,2,3,4,5,6,7];
 var undef;
 
- function checkIfUndefined(input){
+function checkIfUndefined(input){
       if (input === undefined){
             throw Error
         }
     }
 function validateArray(input){
      if (Array.isArray(input)){
-        var i, len;
-         for (i = 0; len = input.length, i < len; i++) {
+         for (var i = 0; i < input.length; i++) {
             checkIfUndefined(input[i]);
-              if (typeof input[i] !== 'string'){
-                  if (typeof input[i] !== 'number'){
+              if (typeof input[i] !== 'string' && typeof input[i] !=='number'){
                      throw Error
                   }
-              }if (typeof input[i] !== 'number'){
-                 if (typeof input[i] !== 'string'){
-                     throw Error
-                  }
-              }
             }
         }else{
             throw Error
@@ -58,7 +51,7 @@ function changeContent(el, arr){
 		el.appendChild(fragment);
 	}
 	catch(e){
-		return console.log("Error");
+		return console.log("Error!");
 	}
 }
 
