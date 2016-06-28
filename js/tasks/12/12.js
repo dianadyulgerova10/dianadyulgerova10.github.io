@@ -40,13 +40,13 @@ for (var i=0; i <buttons.length; i++){
 		
 		buttons[i].innerHTML='hide';
 
-		buttons[i]=addEventListener('click', function(event){
+		buttons[i].addEventListener('click', function(event){
+			console.log(event.target)
 			var previous=(event.target).previousElementSibling;
-			var first;	
 
 			while(previous){
 				if(previous.className==='content'){
-					first=previous;
+				
 					if(previous.style.display==='none'){
 						previous.style.display='';
 						(event.target).innerHTML='hide';
