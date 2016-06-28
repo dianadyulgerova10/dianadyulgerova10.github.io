@@ -36,10 +36,10 @@ function changeContent(input){
 	var buttons=document.getElementsByClassName('btn');
 	var contents=document.getElementsByClassName('content');
 
-
 	for (var i=0; i <buttons.length; i++){			
 		buttons[i].innerHTML='hide';
 		buttons[i].addEventListener('click', function(event){
+			
 			var previous=(event.target).previousElementSibling;
 
 			while(previous){
