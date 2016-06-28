@@ -22,12 +22,13 @@ changeContent(input);
 
 function changeContent(input){
 	try{
-	if(typeof input !== 'string' && !(input instanceof HTMLElement)){
-		throw Error;
+		if(typeof input !== 'string' && !(input instanceof HTMLElement)){
+			throw Error;
+		}
+		if(typeof input === undefined){
+			throw Error;
+		}
 	}
-	if(typeof input === undefined){
-		throw Error;
-	}}
 	catch(e){
 		return console.log("Error!")
 	}
@@ -36,17 +37,13 @@ function changeContent(input){
 	var contents=document.getElementsByClassName('content');
 
 
-for (var i=0; i <buttons.length; i++){		
-		
+	for (var i=0; i <buttons.length; i++){			
 		buttons[i].innerHTML='hide';
-
 		buttons[i].addEventListener('click', function(event){
-			console.log(event.target)
 			var previous=(event.target).previousElementSibling;
 
 			while(previous){
-				if(previous.className==='content'){
-				
+				if(previous.className==='content'){				
 					if(previous.style.display==='none'){
 						previous.style.display='';
 						(event.target).innerHTML='hide';
@@ -55,7 +52,6 @@ for (var i=0; i <buttons.length; i++){
 						previous.style.display='none';
 						(event.target).innerHTML='show';
 					}
-					
 					break;					
 				}
 				else{
@@ -63,8 +59,8 @@ for (var i=0; i <buttons.length; i++){
 				}
 			}		
 		})
-		}
 	}
+}
 
 
 
