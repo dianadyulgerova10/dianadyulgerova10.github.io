@@ -43,6 +43,9 @@ function changeContent(input){
 			var previous=(event.target).previousElementSibling;
 
 			while(previous){
+				if(previous.className==='btn'){
+						return 0;
+					}
 				if(previous.className==='content'){				
 					if(previous.style.display==='none'){
 						previous.style.display='';
