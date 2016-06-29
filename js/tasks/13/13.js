@@ -59,8 +59,6 @@ generate('#problem1',10);
 
 console.log("Problem 2");
 
-find('#problem2');
-
 function find(selector){
 	var select=$(selector);
 	var btns=select.find('.btn');
@@ -79,6 +77,9 @@ function find(selector){
 	btns.html('hide');	
 	
 	btn.on('click', function(){
+		if(($(this).nextUntil($('.btn'))).length<($(this).nextUntil(($('.content')))).length){
+			return 0;
+		}
 		$(this).nextAll('.content').first().toggleClass("hide");
 		})
 		.on('click',function(){
@@ -88,3 +89,4 @@ function find(selector){
 		});     
 }
 
+find('#problem2');
