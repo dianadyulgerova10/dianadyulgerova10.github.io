@@ -67,18 +67,24 @@ function find(selector){
 	var btn=$('.btn');
 	var content=$('.content');
 
+	try{
+		if(!selector || !(select.length) || typeof selector !== 'string'){
+			throw Error;
+		}
+	}
+	catch(e){
+		return console.log("Error!")
+	}
+
 	btns.html('hide');	
 	
 	btn.on('click', function(){
-		//$(this).nextUntil(btn).toggleClass("hide");
 		$(this).nextAll('.content').first().toggleClass("hide");
 		})
 		.on('click',function(){
 			$(this).text(function(i,v){
 				return v==="Show" ? "Hide" : "Show"
 			})
-		});
-      
-
+		});     
 }
 
