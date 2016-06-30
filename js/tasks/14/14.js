@@ -21,8 +21,8 @@ $.fn.dropdownList=function(){
 
 
 	for(var i=0;i<$el.length;i++){
-		var dataValue="value-"+i;
-		$('<div/>',{'class':'dropdown-item', 'data-value':dataValue, 'data-index':i, text: $this.children()[i].text}).appendTo('.options-container');
+		var dataValue="value-"+(i+1);
+		$('<div/>',{'class':'dropdown-item', 'data-value':dataValue, 'data-index':(i+1), text: $this.children()[i].text}).appendTo('.options-container');
 	 }
 
 
