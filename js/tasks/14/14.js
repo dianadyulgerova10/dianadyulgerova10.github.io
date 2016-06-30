@@ -7,7 +7,7 @@ $.fn.dropdownList=function(){
 
 	$this.css({display:'none'});
 
-	$('<div/>', {'class':'dropdown-list'}).appendTo('body');
+	$('<div/>', {'class':'dropdown-list'}).prependTo('body');
 	$this.appendTo('.dropdown-list');
 
 	$('<div/>', {'class':'current', 'data-value':'','text':'menu'}).appendTo('.dropdown-list');
