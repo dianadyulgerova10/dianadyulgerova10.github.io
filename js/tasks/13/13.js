@@ -83,6 +83,9 @@ function find(selector){
 		$(this).nextAll('.content').first().toggleClass("hide");
 		})
 		.on('click',function(){
+			if(($(this).nextUntil($('.btn'))).length<($(this).nextUntil(($('.content')))).length){
+			return 0;
+			}
 			$(this).text(function(i,v){
 				return v==="Show" ? "Hide" : "Show"
 			})
