@@ -39,10 +39,6 @@ $.fn.dropdownList=function(){
         $('.dropdown-item').click(function(){
             $('.options-container').css('display', 'none');
         });
-   
-
-
-	console.log($el[1].text)
 	}
  }(jQuery));
 
