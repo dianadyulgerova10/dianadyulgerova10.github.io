@@ -1,4 +1,5 @@
 //Problem 1
+
 var data= {        
      headers : ['Vendor', 'Model', 'OS'],          
     items : [{          
@@ -23,6 +24,7 @@ var result=tableTemplate(data);
 document.getElementById('problem1').innerHTML=result;
 return result;
 }
+
 problem1(data);
 
 //Problem 2
@@ -51,14 +53,16 @@ var result=animalsTemplate(data);
 document.getElementById('problem2').innerHTML=result;
 return result;
 }
+
 problem2(data2);
 
-// Task 3
+//Problem 3
 
 var data3=[{title:'JavaScript: The Good Parts', id:'1'},
             {title:'Secrets of the JavaScript Ninja', id:'2'},
             {title:'Core HTML5 Canvas',id:3},
             {title:'JavaScript Patterns',id:4}];
+
 
 (function(){
   $.fn.listView = function(data){
