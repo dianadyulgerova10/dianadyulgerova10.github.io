@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>	
+
+
+<div id="problem1"> </div>
+<div id="problem2"> </div>
+<div id="problem3"></div>
+
+<script src="../../jquery-1.12.4.min.js"></script>
+<script src="handlebars/handlebars-v4.0.5.js"></script>
+<script id="table-template" type="text/x-handlebars-template" >
+<div><h3>Problem 1</h3><div>
+<table class="items-table">
+<thead>
+<tr>
+ 	<th> #</th>
+ 	{{#headers}}
+ 	<th>{{this}}</th> 
+ 	{{/headers}}
+</tr> 	
+</thead>
+<tbody>
+	{{#items}}
+		<tr>
+ 		<td>{{@index}}</td> 
+		<td>{{this.col1}}</td> 
+		<td>{{this.col2}}</td>
+		<td>{{this.col3}}</td>
+		</tr>
+	{{/items}}
+</tbody></table>
+</script>
+
+<script id="animals-template" type="text/x-handlebars-template">
+	<div><h3>Problem 2</h3><div>
+	<div class="container">
+	<h1> Animals</h1>
+	<ul class="animals-list">
+	{{#each animals}}
+	<li>
+	{{#if this.url}}
+	<a href="{{this.url}}">See a {{this.name}}
+	{{else}}
+	<a href="http://cdn.playbuzz.com/cdn/3170bee8-985c-47bc-bbb5-2bcb41e85fe9/d8aa4750-deef-44ac-83a1-f2b5e6ee029a.jpg">
+	No link for {{this.name}} Again, here is Batman!
+	{{/if}}
+	</a>	
+	</li>	
+{{/each}}</ul>
+</div>
+</script>
+
+<ul id="books-list" data-template="book-item-template"></ul>
+<script id="books-template" type="text/x-handlebars-template">
+ <li class="book-item">
+    <a href="/#books/{{id}}">
+      <strong>{{title}}</strong>
+    </a>
+  </li> 
+</script>
+
+<script src="15.js"></script>
+</body>
+</html>  

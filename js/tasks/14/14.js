@@ -22,7 +22,7 @@ $.fn.dropdownList=function(){
 
 	for(var i=0;i<$el.length;i++){
 		var dataValue="value-"+(i+1);
-		$('<div/>',{'class':'dropdown-item', 'data-value':dataValue, 'data-index':(i+1), text: $this.children()[i].text}).appendTo('.options-container');
+		$('<div/>',{'class':'dropdown-item', 'data-value':dataValue, 'data-index':(i), text: $this.children()[i].text}).appendTo('.options-container');
 	 }
 
 
@@ -36,10 +36,10 @@ $.fn.dropdownList=function(){
             }
         });
 
-        $('.dropdown-item').click(function(){
-            $('.options-container').css('display', 'none');
-        });
+         $('.dropdown-item').click(function(){
+             $('.options-container').css('display', 'none');
+         });
 	}
  }(jQuery));
 
- $('select').dropdownList();
+ $("select").dropdownList();
