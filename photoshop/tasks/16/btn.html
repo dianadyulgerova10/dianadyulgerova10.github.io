@@ -4,17 +4,18 @@
 <head>
     <title>btn</title>
     <style type="text/css">
-    
     #problem2,
     #problem3 {
         width: 100%;
         display: inline-block;
     }
-    #problem1{
+    
+    #problem1 {
         width: 100%;
         display: inline-flex;
     }
     /*problem 1*/
+    
     .btn {
         background: url(button.png);
         height: 57px;
@@ -22,44 +23,48 @@
         max-width: 100%;
         border: 0;
         font-size: 20px;
-        left:25px;
+        left: 25px;
         padding: 0;
         float: left;
-        outline:none;
+        outline: none;
         /*position: relative;*/
-     /*   margin-right: 50px;*/
+        /*   margin-right: 50px;*/
         text-decoration: none;
-		 background-repeat: repeat-x;
-       
+        background-repeat: repeat-x;
+        line-height: 3em;
     }
     
     .button {
-      
         /*position: relative; */
-         min-width: 150px;
-             display: inline-flex;
-
-    }
-    .left{
-    	background: url(button-left.png);
-    	/*position: absolute;*/
-    	    width: 25px;
-    height: 57px;
-    z-index: 2;
-    left:0;
-    float: left;
-
-    }
-    .right{
-    	    	background: url(button-right.png);
-/*    	position: absolute;*/
-    	    width: 25px;
-    height: 57px;
-    z-index: 2;
-    right:0;
+        min-width: 150px;
+        display: inline-flex;
     }
     
+    .left {
+        background: url(button-left.png);
+        /*position: absolute;*/
+        width: 25px;
+        height: 57px;
+        z-index: 2;
+        left: 0;
+        float: left;
+    }
+    
+    .right {
+        background: url(button-right.png);
+        /*    	position: absolute;*/
+        width: 25px;
+        height: 57px;
+        z-index: 2;
+        right: 0;
+    }
+
+	.txt{
+        position: relative;
+	
+    top: -5px;}
     /*problem 2*/
+    
     .big-image {
         margin: 50px;
         float: left;
@@ -85,7 +90,7 @@
         margin-top: 50px;
     }
     /*problem 3*/
-
+    
     ul {
         list-style-type: none;
         text-transform: uppercase;
@@ -103,24 +108,23 @@
         font-weight: bold;
     }
     
-    
     li.menu {
         background: url("menu-tile.png");
         background-repeat: round;
         padding: 14px;
     }
-
-	 li.menu{
-    	 margin: 0px 0px 0px 1px;
-    	   border-right: 2px solid #cfcfcf;
+    
+    li.menu {
+        margin: 0px 0px 0px 1px;
+        border-right: 2px solid #cfcfcf;
     }
-
-
-    li.menu:first-child{
-    	 margin: 0px 0px 0px 0px;
+    
+    li.menu:first-child {
+        margin: 0px 0px 0px 0px;
     }
-    li.menu:last-child{
-    	border-right: none;
+    
+    li.menu:last-child {
+        border-right: none;
     }
     </style>
 </head>
@@ -129,24 +133,20 @@
     <div id="container">
         <div id="problem1">
             <div class="button">
-            <div class=left></div>
-                <button class="btn">OK</button>
-            <div class="right"></div>    
-            </div>
-             
-            <div class="button"> 
-            <div class=left></div>
-                <button class="btn">Cancel</button>
-                 <div class="right"></div> 
-            </div>
-         
-              
-                <div class="button">
                 <div class=left></div>
-                    <a href="#" class="btn">View More Information</a>
-                     <div class="right"></div> 
-                </div>
-          
+                <button class="btn"><span class="txt">OK</span></button>
+                <div class="right"></div>
+            </div>
+            <div class="button">
+                <div class=left></div>
+                <button class="btn"><span class="txt">Cancel</span></button>
+                <div class="right"></div>
+            </div>
+            <div class="button">
+                <div class=left></div>
+                <a href="#" class="btn"><span class="txt">View More Information</span></a>
+                <div class="right"></div>
+            </div>
         </div>
         <div id="problem2">
             <img class="big-image" src="http://placehold.it/500x400">
@@ -159,9 +159,9 @@
         <div id="problem3">
             <ul>
                 <li class="menu"><a href="#">Home</a>
-                <li class="menu"><a href="#">About</a></li>
-                <li class="menu"><a href="#">More information</a>
-                <li class="menu"><a href="#">Contacts</a></li>
+                    <li class="menu"><a href="#">About</a></li>
+                    <li class="menu"><a href="#">More information</a>
+                        <li class="menu"><a href="#">Contacts</a></li>
             </ul>
         </div>
     </div>
