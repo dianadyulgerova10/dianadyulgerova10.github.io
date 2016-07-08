@@ -204,7 +204,7 @@
 
 
   #nav-menu ul.drop-down{
- 	/*display:none;*/
+ 	display:none;
  	    height: 236px;
     position: absolute;
    
