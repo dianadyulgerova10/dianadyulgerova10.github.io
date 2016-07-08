@@ -194,25 +194,29 @@
  #center > ul > li:nth-child(1) {
      margin: 0;
  }
+
  
  #logo {
      width: 65%;
  }
- /*.Latest_________Shoes_________Clothing_________B {
-  font-size: 17px;
-  font-family: "NeuzeitS";
-  color: rgb(255, 255, 255);
-  line-height: 0.896;
-  
-  position: absolute;
-  left: 723.938px;
-  top: 36.938px;
-  
-  height: 17px;
-  z-index: 92;
-}
 
-*/
+
+
+
+  #nav-menu ul.drop-down{
+ 	/*display:none;*/
+ 	    height: 236px;
+    position: absolute;
+   
+    left: 0;
+    right: 0;
+ 	background:#00e1f5;
+ 	opacity: 1;
+	
+ }
+
+
+
  /*end nav*/
  /*carousel*/
  
@@ -276,17 +280,36 @@
  .box-content img {
      width: 100%;
      height: 55.9%;
- }
- 
- #up-posts {
-     height: 55.2%;
-     margin-bottom: 6.5%;
-       font-size: 13px;
-  font-family: "Myriad Pro";
-  color: rgb(150, 150, 150);
-  text-align: left;
+      margin-bottom: .8em;
 
  }
+ .title{
+ 	    font-size: 10px;
+ }
+
+ #up-posts {
+     height: 55.2%;
+     margin-bottom: 2.4%;
+         margin-top: -.8%;
+       font-size: 13px;
+  font-family: "NeuzeitS";
+  color: rgb(150, 150, 150);
+  text-align: left;
+  /*line-height: 1.7em;*/
+  letter-spacing: 2px;
+
+
+ }
+
+#up-posts p{
+	margin:0;
+	   
+}
+#up-posts article{
+	 line-height: 1.2em;
+}
+
+
  .read-more{
  	color:#26e3f6
  }
@@ -301,8 +324,6 @@
  #up-posts .title2{
  	text-transform: uppercase;
  	color:black;
- 	    font-weight: bold;
-
  }
 
  #up-posts div:nth-child(2) {
@@ -319,6 +340,7 @@
      width: 18.7%;
      height: 27.2%;
      float: left;
+
  }
  
  .down-post img {
@@ -333,28 +355,32 @@
      margin: 0;
  }
 
+.down-post-text{
+ font-size: 11px;
+  font-family: "NeuzeitS";
+  color: rgb(50, 50, 50);
+  line-height: 1.286;
+  float: left;
+     margin:0;
+ }
+
+ .left{
+ float: right;
+ color:#969696;
+
+ }
 
 
-/*.feature__SELECTED_OUTFIT_GRID_Weekly_selected_o {
-  font-size: 13px;
-  font-family: "Myriad Pro";
-  color: rgb(150, 150, 150);
-  text-transform: uppercase;
-  line-height: 1.615;
-  text-align: left;
-  position: absolute;
-  left: 414.937px;
-  top: 965.121px;
-  width: 376px;
-  height: 102px;
-  z-index: 18;
+
+
+ .backspace{
+margin-left: -4px;
 }
-*/
+
 
 
  /*end content*/
- /*
-body > div.content > div:nth-child(2)*/
+
  /*footer*/
  
  footer {
@@ -373,17 +399,32 @@ body > div.content > div:nth-child(2)*/
      height: 61.1%;
      padding-top: 30px;
      padding-bottom: 30px;
-     display: table-caption;
+    
  }
  
+#footer-menu *{
+	    display: inline;
+   
+    font-size: .8em;
+}
+#footer-menu>li{
+	 margin-left: 2.6em;
+}
+#currency li{
+
+    margin-right: 2.6em;
+
+}
+
  #footer-menu,
  #currency {
-     display: inline-flex;
+    
      -webkit-padding-start: 0px;
  }
  
  #social {
      display: inline-flex;
+         margin-bottom: 2em;
  }
  #social-links{
  	display: flex;
@@ -423,6 +464,12 @@ body > div.content > div:nth-child(2)*/
      width: 20px;
      height: 20px;
  }
+  #pinterest{
+     background: url('images/footer.png') no-repeat -149px 0;
+     width: 23px;
+     height: 22px;
+ }
+ 
  
  #pinterest:hover {
      background: url('images/footer-hov.png') no-repeat -149px 0;
