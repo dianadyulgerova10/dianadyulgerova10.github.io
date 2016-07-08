@@ -216,6 +216,11 @@
  }
 
 
+#clothing > ul > li > ul > li > ul{
+display: block;
+ }
+
+
 
  /*end nav*/
  /*carousel*/
