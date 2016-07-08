@@ -216,7 +216,11 @@
  
 	
  }
+/*#search div.drop-down{
+	left:0;
 
+
+} */
  .drop-down-wrapper{
  	margin: 0 33.6%;
  }
@@ -249,6 +253,12 @@ display: block;
 #center > ul > li{
 	height: 24px;
 }
+
+
+
+
+
+
  /*end nav*/
  /*carousel*/
  
@@ -549,4 +559,7 @@ margin-left: -4px;
  	margin-left: 12px;
  }
 
+.singup{
+background: url(images/small-arrow.png) no-repeat right center;
+}
  /*end footer*/
