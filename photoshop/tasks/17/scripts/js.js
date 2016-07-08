@@ -1,9 +1,19 @@
 $(document).ready(function() {
-	$('#clothing').mouseover(function() {
-						$('.drop-down').css("display","block");
+
+
+
+	function dropDown(menu,drop){
+	menu.mouseover(function() {
+						drop.css("display","block");
+						
 						})
-				.mouseout(function(){
-					$('.drop-down').css("display","none");
-						})
-	;
+				 .mouseout(function(){
+					drop.css("display","none");
+				 		})
+	};
+
+	dropDown($('#clothing'),$('#clothing .drop-down'));	
+	dropDown($('#brands'),$('#brands .drop-down'));
+	dropDown($('#journal'),$('#journal .drop-down'));
+
 })

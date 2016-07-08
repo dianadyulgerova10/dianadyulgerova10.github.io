@@ -107,6 +107,7 @@
  
  ol,
  ul {
+ 	margin:0;
      list-style: none;
  }
  
@@ -148,8 +149,8 @@
      height: 3.6%;
      position: absolute;
      z-index: 20;
-     background: black;
-     opacity: 0.8;
+     background: rgba(0, 0, 0, 0.8);
+     
      align-items: center;
      justify-content: center;
  }
@@ -203,25 +204,51 @@
 
 
 
-  #nav-menu ul.drop-down{
+  #nav-menu div.drop-down{
  	display:none;
- 	    height: 236px;
+ 	height: 236px;
     position: absolute;
-   
+   	top:37px;
     left: 0;
     right: 0;
  	background:#00e1f5;
- 	opacity: 1;
+ 	    color: #323232;
+ 
 	
  }
+
+ .drop-down-wrapper{
+ 	margin: 0 33.6%;
+ }
+
+#journal div.drop-down{
+	height: 103px;
+}
 
 
 #clothing > ul > li > ul > li > ul{
 display: block;
  }
 
+#nav-menu .menu-list{
+	display: block;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+.line hr{
+	  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #1cb1c5;
+    margin: 1em 0;
+    padding: 0; 
+}
 
 
+#center > ul > li{
+	height: 24px;
+}
  /*end nav*/
  /*carousel*/
  
