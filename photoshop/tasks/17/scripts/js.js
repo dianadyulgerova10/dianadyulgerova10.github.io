@@ -2,28 +2,39 @@ $(document).ready(function() {
 
 
 
-	function dropDown(menu,drop){
-	menu.mouseover(function() {
-						drop.css("display","block");
-						
-						})
-				 .mouseout(function(){
-					drop.css("display","none");
-				 		})
-	};
+    function dropDown(menu, drop) {
+        menu.mouseover(function() {
+                drop.css("display", "block");
+
+            })
+            .mouseout(function() {
+                drop.css("display", "none");
+            })
+
+
+    };
 
 
 
-	dropDown($('#clothing'),$('#clothing .drop-down'));	
-	dropDown($('#brands'),$('#brands .drop-down'));
-	dropDown($('#journal'),$('#journal .drop-down'));
+    dropDown($('#clothing'), $('#clothing .drop-down-categories'));
+    dropDown($('#brands'), $('#brands .drop-down-categories'));
+    dropDown($('#journal'), $('#journal .drop-down-categories'));
+    dropDown($('#search'), $('.drop-down-search'));
 
 
-	$('#search').click(function(){
-			$('#search .drop-down').css({"display": "block", "top":23 ,  "width" : 664});
-			// $('#search .drop-down').removeAttr(('left'))
-		})
+    $('.glyphicon-chevron-left').mouseover(function() {
+            $(this).css('background', 'url(images/arrow-rollover-click.png)')
+        })
+        .mouseout(function() {
+            $(this).css('background', 'url(images/arrow-rollover.png)')
+        })
 
-	
+
+    $('.glyphicon-chevron-right').mouseover(function() {
+            $(this).css('background', 'url(images/arrow-rollover-click.png)')
+        })
+        .mouseout(function() {
+            $(this).css('background', 'url(images/arrow-rollover.png)')
+        })
 
 })
