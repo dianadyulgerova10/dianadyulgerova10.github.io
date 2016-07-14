@@ -137,6 +137,11 @@
      src: url('fonts/NeuzeitS.eot');
      src: local('NeuzeitS'), local('NeuzeitS'), url('fonts/NeuzeitS.ttf') format('truetype');
  }
+  @font-face {
+     font-family: 'Myriad Pro';
+     src: url('fonts/Myriad-pro.eot');
+     src: local('Myriad Pro'), local('Myriad Pro'), url('fonts/Myriad-pro.ttf') format('truetype');
+ }
  
  body {
      width: 100%;
@@ -432,6 +437,79 @@
  .glyphicon-chevron-right:before {
      content: "";
  }
+
+
+.carousel-text-1{
+    position: absolute;
+    /* top: 1px; */
+    width: 310px;
+    height: 250px;
+    bottom: 165px;
+    left: 414px;
+/*    background-color: black;*/
+    color: white;
+    text-align: -webkit-center;
+    color: rgb(255, 255, 255);
+
+}
+
+.carousel-text-2{
+	position: absolute;
+    /* top: 1px; */
+    width: 307px;
+    height: 295px;
+    bottom: 137px;
+    right: 416px;
+   /* background-color: white ;*/
+        text-align: -webkit-center;
+}
+
+
+
+
+
+.carousel-small-header{
+	text-transform: uppercase;
+	    line-height: 21px;
+    font-size: 15px;
+        margin-bottom: 8px;
+}
+.carousel-big-header{
+    font-size: 39px;
+    font-family: "Myriad Pro";
+    line-height: 1.263;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    padding-bottom: 17px;
+
+}
+.carousel-text-content{
+	    font-size: 16px;
+    line-height: 17px;
+    padding-bottom: 27px;
+}
+
+.btn-carousel {
+    /* color: white; */
+    background: rgba(52, 152, 219, 0);
+    text-decoration: none;
+    border: 1px solid;
+        padding: 6px 10px;
+    text-transform: uppercase;
+        font-size: 12px;
+       /* background: url('images/arrow-carousel-text.png') no-repeat right center;*/
+}
+
+.btn-carousel:hover {
+      background: #00e1f5;
+  text-decoration: none;
+  color:black;
+  border:none;
+ 
+}
+
+
+
  /*end carousel*/
  /*content*/
  
