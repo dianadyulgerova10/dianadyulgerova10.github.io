@@ -85,7 +85,6 @@
      font-size: 100%;
      font: inherit;
      vertical-align: baseline;
-
  }
  
  article,
@@ -160,7 +159,6 @@
  #nav-menu ul {
      display: flex;
      -webkit-padding-start: 0px;
-
  }
  
  #left {
@@ -178,25 +176,24 @@
  #right {
      position: absolute;
      right: 10px;
-     top:17px;
+     top: 17px;
  }
  
  #center {
      font-size: 15px;
      font-family: "NeuzeitS";
      color: rgb(255, 255, 255);
-    /* line-height: 0.896;*/
+     /* line-height: 0.896;*/
      max-height: 10px;
      text-align: left;
      width: 950px;
      letter-spacing: 2px;
-         margin: 0 1%;
-         line-height: 1;
+     margin: 0 1%;
+     line-height: 1;
  }
  
  #center > ul > li {
      margin: 0 2%;
-
  }
  
  #center > ul > li:nth-child(1) {
@@ -204,10 +201,9 @@
  }
  
  #logo {
- 	line-height: 0.5;
+     line-height: 0.5;
      min-width: 100%;
      max-width: 100%;
-   
  }
  
  #nav-menu div.drop-down-categories {
@@ -278,13 +274,10 @@
  #center > ul > li {
      height: 24px;
  }
-
-
-#search{
-	margin-right: 14px;
-
-}
-
+ 
+ #search {
+     margin-right: 14px;
+ }
  /*end nav*/
  /*carousel*/
  
@@ -317,7 +310,7 @@
      filter: none !important;
      background: #ebebe6 !important;
      z-index: 0;
-     width: 2.25% ;
+     width: 2.25%;
  }
  
  .carousel-indicators li {
@@ -369,7 +362,7 @@
      display: flex;
      -webkit-flex-direction: column;
      flex-direction: column;
-     margin-top:10px;
+     margin-top: 10px;
  }
  
  .content>div {}
@@ -420,18 +413,18 @@
  }
  
  #up-posts .title {
-         text-transform: uppercase;
-    line-height: 1.6em;
-    font-size: 12px;
+     text-transform: uppercase;
+     line-height: 1.6em;
+     font-size: 12px;
  }
  
  #up-posts .title2 {
-    text-transform: uppercase;
-    color: black;
-    font-size: 1.1em;
-    line-height: 1.63em;
-    letter-spacing: 2.5px;
-    word-spacing: 1.23px;
+     text-transform: uppercase;
+     color: black;
+     font-size: 1.1em;
+     line-height: 1.63em;
+     letter-spacing: 2.5px;
+     word-spacing: 1.23px;
  }
  
  #up-posts div:nth-child(2) {
@@ -442,17 +435,13 @@
      display: inline;
      min-width: 100%;
      margin-bottom: 11.7%;
-
-
-
  }
-
  
-#up-posts div p.post-content{
- 	    margin-top: 4px;
-    font-size: 14px;
-        letter-spacing: 1.46px;
-    line-height: 20px;
+ #up-posts div p.post-content {
+     margin-top: 4px;
+     font-size: 14px;
+     letter-spacing: 1.46px;
+     line-height: 20px;
  }
  
  .down-post {
@@ -474,20 +463,20 @@
  }
  
  .down-post-text {
-       font-size: 11px;
-    font-family: "NeuzeitS";
-    color: rgb(50, 50, 50);
-    /* line-height: 1.286; */
-    float: left;
-    margin: 0;
-    font-size: 14px;
-    color: rgb(50, 50, 50);
-    line-height: .77;
-    /* width: 100%; */
-    /* height: 32px; */
-    letter-spacing: .9px;
-    padding-top: 4.5%;
-    word-spacing: 0px;
+     font-size: 11px;
+     font-family: "NeuzeitS";
+     color: rgb(50, 50, 50);
+     /* line-height: 1.286; */
+     float: left;
+     margin: 0;
+     font-size: 14px;
+     color: rgb(50, 50, 50);
+     line-height: .77;
+     /* width: 100%; */
+     /* height: 32px; */
+     letter-spacing: .9px;
+     padding-top: 4.5%;
+     word-spacing: 0px;
  }
  
  .left {
@@ -503,7 +492,7 @@
  
  footer {
      border-top: 1px solid #c8c8c8;
-     text-align: -webkit-center;
+     /*text-align: -webkit-center;*/
      /*display: none;*/
      /*position: absolute;*/
      width: 59.1%;
@@ -515,9 +504,9 @@
  }
  
  #up {
-         height: 71.1%;
-    padding-top: 50px;
-    padding-bottom: 30px;
+     height: 71.1%;
+     padding-top: 50px;
+     padding-bottom: 53px;
  }
  
  #footer-menu * {
@@ -539,75 +528,62 @@
  }
  
  #social {
-     display: inline-flex;
-     margin-bottom: 2em;
+    display: inline-flex;
+    margin-bottom: 2.68em;
+    margin-left: 215px;
  }
  
  #social-links {
      display: flex;
-        margin-right: 89px;
+     margin-right: 58px;
  }
  
  #facebook {
-
-
      background: url('images/footer.png') no-repeat 0 0;
-   
  }
  
  #facebook:hover {
      background: url('images/footer-hov.png') no-repeat 0 0;
-
  }
  
  #tweeter {
      background: url('images/footer.png') no-repeat -45px -0px;
-
  }
  
  #tweeter:hover {
      background: url('images/footer-hov.png') no-repeat -45px 0px;
-
  }
  
  #instagram {
      background: url('images/footer.png') no-repeat -100px 0px;
-
  }
  
  #instagram:hover {
      background: url('images/footer-hov.png') no-repeat -100px 0px;
-
  }
  
  #pinterest {
      background: url('images/footer.png') no-repeat -149px 0;
-
  }
  
  #pinterest:hover {
      background: url('images/footer-hov.png') no-repeat -149px 0;
-
  }
  
  #tweeter2 {
      background: url('images/footer.png') no-repeat -208px 0;
-
  }
  
  #tweeter2:hover {
      background: url('images/footer-hov.png') no-repeat -208px 0;
-
  }
  
  #sv {
      background: url('images/footer.png') no-repeat -253px 0px;
-
  }
  
  #sv:hover {
      background: url('images/footer-hov.png') no-repeat -253px 0px;
- 
  }
  
  #b {
@@ -620,24 +596,74 @@
  
  #down {
      border-top: 1px solid #c8c8c8;
+     text-align: -webkit-center;
  }
  
  #social-links div {
      margin-left: 20px;
-    width: 29px;
-    height: 24px;
-/*    width: 21px;
+     width: 29px;
+     height: 24px;
+     /*    width: 21px;
     height: 21px;
     background-repeat: no-repeat;*/
  }
  
  .singup {
-    background: url(images/small-arrow.png) no-repeat right center;
- 	width: 269px;
- 	height: 39px;
- 	background-size: 9%;
-	text-align: center;
-	font-size:14px;
+     background: url(images/small-arrow.png) no-repeat right center;
+     width: 272px;
+     height: 39px;
+     background-size: 9%;
+     text-align: center;
+     font-size: 15px;
+ }
 
+ #input-footer{
+ 	margin-top:-10px;
+ }
+ 
+ #footer-menu {
+     text-align: -webkit-center;
+ }
+ 
+ #footer-menu li {
+     font-size: 14px;
+     margin: 0px 29px;
+     letter-spacing: 0.75px;
+ }
+ 
+ #currency li {
+     margin: 0;
+     padding-left: 12px;
+     font-size: 12px;
+ }
+ 
+ #down-footer-menu {
+     display: inline-flex;
+     margin: 50px 0;
+     font-size: 10.5px;
+     letter-spacing: 1.31px;
+     color: #a9a9a9;
+     padding: 0;
+     word-spacing: -1px;
  }
  /*end footer*/
+ /*banner*/
+ 
+ #banner {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     text-transform: uppercase;
+     font-size: 10px;
+         letter-spacing: 0.822px;
+ }
+ 
+ #banner-menu {
+     display: inline-flex;
+     padding-left: 32.1%;
+ }
+ 
+ #banner-close {
+     float: right;
+ }
+ /*end banner*/
